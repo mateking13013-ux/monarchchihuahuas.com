@@ -1,234 +1,322 @@
 ---
-// AboutSection component
+// AboutSection — "Our Story" editorial layout with pull quote
 ---
 
-<section class="about-section" id="about">
-  <div class="about-container">
-    <div class="about-images">
-      <div class="about-img">
-        <img src="/images/h2.jpeg" alt="Beautiful Staffie from Michael Paws" loading="lazy">
+<section class="story" id="about">
+  <div class="story-inner">
+    <div class="story-media">
+      <div class="media-main">
+        <img src="/images/h2.jpeg" alt="Healthy Staffords — our Staffies raised at home" loading="lazy" />
       </div>
-      <div class="about-img">
-        <img src="/images/h3.jpeg" alt="Adorable Staffie ready for a home" loading="lazy">
+      <div class="media-secondary">
+        <img src="/images/h4.jpeg" alt="A Healthy Staffords puppy" loading="lazy" />
       </div>
-      <div class="about-img">
-        <img src="/images/h4.jpeg" alt="Sweet Staffie companion" loading="lazy">
+      <div class="media-badge">
+        <span class="badge-top">Est.</span>
+        <span class="badge-year">2014</span>
+        <span class="badge-bottom">Family Breeder</span>
       </div>
     </div>
 
-    <div class="about-content">
-      <span class="section-badge">About Us</span>
-      <h2 class="about-title">
-        About <span>Michael Paws</span>
+    <div class="story-copy">
+      <span class="kicker">Our Story</span>
+      <h2 class="story-title">
+        Ten years of raising<br>
+        Staffies the way they<br>
+        <em>deserve</em> to be raised.
       </h2>
-      <p class="about-description">
-        Welcome to Michael Paws, where we specialize in raising healthy, happy, and well-socialized Staffordshire Bull Terrier puppies. For over a decade, our family has been dedicated to breeding these loyal, courageous companions with the utmost care and attention.
-      </p>
-      <p class="about-description">
-        Staffies are known for their bold personality, unwavering loyalty, and incredible affection — especially with children. Each of our puppies is raised in a loving home environment, ensuring they're confident, well-adjusted, and ready to become the heart of your family.
+
+      <p class="story-lede">
+        Healthy Staffords began as a single litter at our kitchen table and grew into a decade-long commitment to this remarkable breed. We are not a kennel. We are a family — and every pup we raise is a member of it until the day we hand them to yours.
       </p>
 
-      <div class="about-features">
-        <div class="feature">
-          <span class="feature-icon">
-            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-          </span>
-          Home Raised Staffies
+      <blockquote class="pull-quote">
+        <span class="quote-mark">&ldquo;</span>
+        <p>We never measure success in litters placed — we measure it in the families we stay in touch with, years after the puppy has gone home.</p>
+        <footer>
+          <span class="sig-line"></span>
+          <span class="sig-name">The Healthy Staffords Family</span>
+        </footer>
+      </blockquote>
+
+      <div class="story-pillars">
+        <div class="pillar">
+          <span class="pillar-num">01</span>
+          <div>
+            <h4>Raised in our living room</h4>
+            <p>Socialized with children, visitors, and the everyday sounds of a busy household.</p>
+          </div>
         </div>
-        <div class="feature">
-          <span class="feature-icon">
-            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-          </span>
-          Vet Checked & Vaccinated
+        <div class="pillar">
+          <span class="pillar-num">02</span>
+          <div>
+            <h4>Temperament-tested parents</h4>
+            <p>Both sire and dam are chosen for gentle, confident temperaments — never for volume.</p>
+          </div>
         </div>
-        <div class="feature">
-          <span class="feature-icon">
-            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-          </span>
-          Health Guarantee Included
-        </div>
-        <div class="feature">
-          <span class="feature-icon">
-            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-          </span>
-          Lifetime Breeder Support
+        <div class="pillar">
+          <span class="pillar-num">03</span>
+          <div>
+            <h4>A life after pickup</h4>
+            <p>We stay available for questions, training advice, and photos long after the leash changes hands.</p>
+          </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
 <style>
-  .about-section {
-    display: block;
-    font-family: var(--font-family, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif);
-    background: #F0F4F8;
-    padding: 4rem 1.5rem;
+  .story {
+    background: var(--color-off-white);
+    padding: 6rem 1.5rem;
+    position: relative;
   }
 
-  .about-container {
-    max-width: 1200px;
+  .story-inner {
+    max-width: 1280px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 5rem;
     align-items: center;
   }
 
-  .about-images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+  /* MEDIA */
+  .story-media {
+    position: relative;
+    min-height: 560px;
   }
 
-  .about-img {
-    border-radius: 12px;
+  .media-main {
+    position: relative;
+    width: 85%;
+    height: 520px;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 30px 60px rgba(74, 43, 20, 0.18);
   }
 
-  .about-img:first-child {
-    grid-column: 1 / -1;
-  }
-
-  .about-img img {
+  .media-main img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
   }
 
-  .about-img:first-child img {
-    height: 300px;
-  }
-
-  .about-img:not(:first-child) img {
+  .media-secondary {
+    position: absolute;
+    right: -20px;
+    bottom: 30px;
+    width: 55%;
     height: 220px;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 8px solid var(--color-off-white);
+    box-shadow: 0 20px 40px rgba(74, 43, 20, 0.22);
   }
 
-  .about-content {
-    padding: 1rem 0;
+  .media-secondary img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
-  .section-badge {
-    display: inline-block;
-    background: #1B2A4A;
-    color: white;
-    padding: 0.4rem 1rem;
-    border-radius: 50px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-
-  .about-title {
-    font-size: 2.25rem;
-    font-weight: 700;
-    color: #2a2a2a;
-    margin: 0 0 1rem;
-    line-height: 1.2;
-  }
-
-  .about-title span {
-    color: #1B2A4A;
-  }
-
-  .about-description {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #555;
-    margin: 0 0 1.5rem;
-  }
-
-  .about-features {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .feature {
+  .media-badge {
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    width: 120px;
+    height: 120px;
+    background: var(--color-primary);
+    color: var(--color-cream);
+    border-radius: 50%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
-    font-size: 0.95rem;
-    color: #333;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--font-serif);
+    box-shadow: 0 12px 30px rgba(107, 63, 29, 0.35);
+    transform: rotate(-8deg);
+    z-index: 4;
+  }
+
+  .badge-top {
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+
+  .badge-year {
+    font-size: 2.1rem;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0.1rem 0 0.15rem;
+  }
+
+  .badge-bottom {
+    font-size: 0.64rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+
+  /* COPY */
+  .kicker {
+    display: inline-block;
+    font-family: var(--font-family);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    margin-bottom: 1.2rem;
+    position: relative;
+    padding-left: 28px;
+  }
+
+  .kicker::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 20px;
+    height: 1.5px;
+    background: var(--color-secondary);
+  }
+
+  .story-title {
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 600;
+    line-height: 1.12;
+    color: var(--color-gray-900);
+    margin: 0 0 1.5rem;
+    letter-spacing: -0.02em;
+  }
+
+  .story-title em {
+    font-style: italic;
+    color: var(--color-primary);
     font-weight: 500;
   }
 
-  .feature-icon {
-    width: 24px;
-    height: 24px;
-    background: #1B2A4A;
-    border-radius: 50%;
+  .story-lede {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--color-gray-700);
+    margin: 0 0 2rem;
+    max-width: 560px;
+  }
+
+  .pull-quote {
+    position: relative;
+    background: var(--color-cream);
+    border-left: 3px solid var(--color-secondary);
+    padding: 2rem 2rem 1.75rem 2.2rem;
+    margin: 0 0 2.5rem;
+    border-radius: 0 14px 14px 0;
+  }
+
+  .quote-mark {
+    position: absolute;
+    top: -8px;
+    left: 18px;
+    font-family: var(--font-serif);
+    font-size: 4.5rem;
+    color: var(--color-secondary);
+    opacity: 0.3;
+    line-height: 1;
+  }
+
+  .pull-quote p {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.18rem;
+    line-height: 1.5;
+    color: var(--color-gray-900);
+    margin: 0 0 1rem;
+  }
+
+  .pull-quote footer {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+    gap: 0.75rem;
   }
 
-  .feature-icon svg {
-    width: 14px;
-    height: 14px;
-    fill: white;
+  .sig-line {
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background: var(--color-primary);
   }
 
-  .btn-learn-more {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: #1B2A4A;
-    color: white;
-    padding: 0.875rem 1.75rem;
-    border-radius: 50px;
-    font-size: 1rem;
+  .sig-name {
+    font-family: var(--font-family);
+    font-size: 0.85rem;
     font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
+    letter-spacing: 0.06em;
+    color: var(--color-primary);
+    text-transform: uppercase;
   }
 
-  .btn-learn-more:hover {
-    background: #2E8B8B;
-    transform: translateY(-2px);
+  .story-pillars {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 
-  .btn-learn-more svg {
-    width: 18px;
-    height: 18px;
-    fill: currentColor;
+  .pillar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.25rem;
+    align-items: start;
+    padding-bottom: 1.3rem;
+    border-bottom: 1px solid var(--color-gray-200);
   }
 
-  @media (max-width: 900px) {
-    .about-container {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
+  .pillar:last-child { border-bottom: 0; padding-bottom: 0; }
 
-    .about-images {
-      order: -1;
-    }
-
-    .about-title {
-      font-size: 1.75rem;
-    }
+  .pillar-num {
+    font-family: var(--font-serif);
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+    line-height: 1;
+    padding-top: 0.15rem;
   }
 
-  @media (max-width: 600px) {
-    .about-section {
-      padding: 3rem 1rem;
-    }
+  .pillar h4 {
+    font-family: var(--font-family);
+    font-size: 1.02rem;
+    font-weight: 700;
+    color: var(--color-gray-900);
+    margin: 0 0 0.3rem;
+    letter-spacing: -0.005em;
+  }
 
-    .about-features {
-      grid-template-columns: 1fr;
-    }
+  .pillar p {
+    font-size: 0.94rem;
+    line-height: 1.65;
+    color: var(--color-gray-600);
+    margin: 0;
+  }
 
-    .about-img:first-child img {
-      height: 250px;
-    }
+  @media (max-width: 960px) {
+    .story { padding: 4rem 1.2rem; }
+    .story-inner { grid-template-columns: 1fr; gap: 3rem; }
+    .story-media { min-height: 420px; }
+    .media-main { width: 90%; height: 380px; }
+    .media-secondary { height: 180px; bottom: 20px; right: -10px; }
+    .media-badge { width: 100px; height: 100px; top: -14px; left: -10px; }
+    .badge-year { font-size: 1.7rem; }
+  }
 
-    .about-img:not(:first-child) img {
-      height: 180px;
-    }
+  @media (max-width: 540px) {
+    .media-main { width: 100%; height: 320px; }
+    .media-secondary { display: none; }
+    .pull-quote { padding: 1.5rem 1.25rem 1.25rem 1.5rem; }
+    .pull-quote p { font-size: 1.05rem; }
   }
 </style>

@@ -1,65 +1,87 @@
 ---
-// TopBar component - Announcement bar
+// TopBar — slim announcement strip
 ---
 
 <div class="top-bar">
-  <span class="message">Welcome to Michael Paws — Your Staffordshire Bull Terrier Family Starts Here</span>
-  <a href="/contact" class="btn">Contact Us</a>
+  <div class="top-inner">
+    <span class="message">
+      <span class="dot"></span>
+      Reserving spring &amp; summer litters — welcoming a few thoughtful families
+    </span>
+    <a href="/contact" class="btn">Schedule a call <span aria-hidden="true">&rarr;</span></a>
+  </div>
 </div>
 
 <style>
   .top-bar {
+    background: var(--color-gray-900);
+    color: var(--color-cream);
+    font-family: var(--font-family);
+    border-bottom: 1px solid rgba(251, 245, 233, 0.08);
+  }
+
+  .top-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0.6rem 2rem;
     display: flex;
-    background: linear-gradient(135deg, #1B2A4A 0%, #152238 100%);
-    color: white;
-    font-family: var(--font-family, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif);
-    padding: 0.5rem 1.5rem;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: space-between;
+    gap: 1.25rem;
   }
 
   .message {
-    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-size: 0.82rem;
     font-weight: 400;
+    letter-spacing: 0.01em;
+    color: rgba(251, 245, 233, 0.88);
+  }
+
+  .dot {
+    width: 7px;
+    height: 7px;
+    background: var(--color-gold);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(212, 163, 90, 0.2);
+    flex-shrink: 0;
   }
 
   .btn {
-    background: rgba(255, 255, 255, 0.15);
-    color: white;
-    padding: 0.35rem 0.9rem;
-    border-radius: 50px;
-    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: var(--color-gold);
+    font-size: 0.78rem;
     font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     text-decoration: none;
-    transition: all 0.3s ease;
     white-space: nowrap;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.25s ease;
   }
 
   .btn:hover {
-    background: rgba(255, 255, 255, 0.25);
-    transform: scale(1.02);
+    color: var(--color-cream);
   }
+
+  .btn span {
+    transition: transform 0.25s ease;
+  }
+
+  .btn:hover span { transform: translateX(3px); }
 
   @media (max-width: 768px) {
-    .top-bar {
-      padding: 0.4rem 1rem;
-    }
-
-    .message {
-      font-size: 0.8rem;
-    }
-
-    .btn {
-      font-size: 0.75rem;
-      padding: 0.3rem 0.75rem;
-    }
+    .top-inner { padding: 0.55rem 1.1rem; gap: 0.75rem; }
+    .message { font-size: 0.74rem; }
+    .btn { font-size: 0.68rem; }
   }
 
-  @media (max-width: 480px) {
-    .message {
-      font-size: 0.72rem;
-    }
+  @media (max-width: 520px) {
+    .top-inner { justify-content: center; }
+    .btn { display: none; }
+    .message { font-size: 0.72rem; text-align: center; }
   }
 </style>

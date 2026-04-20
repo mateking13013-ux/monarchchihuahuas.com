@@ -1,41 +1,47 @@
 /* ================================
-   Michael Paws
+   Healthy Staffords
    Main Stylesheet
-   Deep Navy & Teal Theme
+   Warm & Homey Breeder Theme
 ================================ */
+
+/* Google Fonts — editorial serif + clean sans */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap');
 
 /* CSS Custom Properties (Theme) */
 :root {
-  /* Primary Colors - Deep Navy */
-  --color-primary: #1B2A4A;
-  --color-primary-light: #2E8B8B;
-  --color-primary-dark: #0F1B33;
+  /* Primary Colors - Warm Chestnut */
+  --color-primary: #6B3F1D;
+  --color-primary-light: #8C5A34;
+  --color-primary-dark: #4A2B14;
 
-  /* Secondary Colors - Teal Accents */
-  --color-secondary: #2E8B8B;
-  --color-secondary-light: #4EADAD;
-  --color-secondary-dark: #245D5D;
+  /* Secondary Colors - Terracotta */
+  --color-secondary: #C87348;
+  --color-secondary-light: #E09069;
+  --color-secondary-dark: #A35A33;
 
   /* Accent Colors */
-  --color-gold: #3BA0A0;
-  --color-cream: #F0F4F8;
+  --color-gold: #D4A35A;
+  --color-sage: #8C9779;
+  --color-cream: #FBF5E9;
+  --color-cream-dark: #F2E6CE;
 
   /* Neutrals */
   --color-white: #FFFFFF;
-  --color-off-white: #FAFAFA;
-  --color-gray-100: #F5F5F5;
-  --color-gray-200: #EEEEEE;
-  --color-gray-300: #E0E0E0;
-  --color-gray-400: #BDBDBD;
-  --color-gray-500: #9E9E9E;
-  --color-gray-600: #757575;
-  --color-gray-700: #616161;
-  --color-gray-800: #424242;
-  --color-gray-900: #212121;
-  --color-black: #1A1A1A;
+  --color-off-white: #FDFBF6;
+  --color-gray-100: #F4EEE3;
+  --color-gray-200: #E8DFCF;
+  --color-gray-300: #D6C9B4;
+  --color-gray-400: #B8A88D;
+  --color-gray-500: #8E7E64;
+  --color-gray-600: #6D604B;
+  --color-gray-700: #524736;
+  --color-gray-800: #3A3126;
+  --color-gray-900: #2B2018;
+  --color-black: #1F1712;
 
   /* Typography */
-  --font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, sans-serif;
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   --font-size-base: 16px;
 
   /* Spacing */
@@ -50,15 +56,15 @@
   /* Border Radius */
   --radius-sm: 4px;
   --radius-md: 8px;
-  --radius-lg: 12px;
-  --radius-xl: 20px;
-  --radius-full: 50px;
+  --radius-lg: 14px;
+  --radius-xl: 22px;
+  --radius-full: 999px;
 
-  /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
-  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.2);
+  /* Shadows (warm) */
+  --shadow-sm: 0 1px 3px rgba(74, 43, 20, 0.08);
+  --shadow-md: 0 4px 12px rgba(74, 43, 20, 0.1);
+  --shadow-lg: 0 14px 32px rgba(74, 43, 20, 0.14);
+  --shadow-xl: 0 24px 50px rgba(74, 43, 20, 0.18);
 
   /* Transitions */
   --transition-fast: 0.15s ease;
@@ -84,21 +90,23 @@ html {
 
 body {
   font-family: var(--font-family);
-  line-height: 1.6;
+  line-height: 1.65;
   color: var(--color-gray-800);
-  background-color: var(--color-white);
+  background-color: var(--color-off-white);
   overflow-x: hidden;
 }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--color-black);
+  font-family: var(--font-serif);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--color-gray-900);
+  letter-spacing: -0.01em;
 }
 
-h1 { font-size: 3rem; }
-h2 { font-size: 2.25rem; }
+h1 { font-size: 3.25rem; }
+h2 { font-size: 2.4rem; }
 h3 { font-size: 1.75rem; }
 h4 { font-size: 1.25rem; }
 h5 { font-size: 1rem; }
@@ -115,7 +123,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-primary-dark);
+  color: var(--color-secondary);
 }
 
 img {
@@ -156,8 +164,10 @@ img {
   gap: var(--spacing-sm);
   padding: var(--spacing-md) var(--spacing-xl);
   border-radius: var(--radius-full);
-  font-size: 1rem;
+  font-family: var(--font-family);
+  font-size: 0.95rem;
   font-weight: 600;
+  letter-spacing: 0.02em;
   text-decoration: none;
   cursor: pointer;
   transition: all var(--transition-normal);
@@ -165,27 +175,28 @@ img {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  background: var(--color-primary);
   color: var(--color-white);
-  box-shadow: 0 4px 15px rgba(27, 42, 74, 0.3);
+  box-shadow: 0 6px 16px rgba(107, 63, 29, 0.25);
 }
 
 .btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(27, 42, 74, 0.4);
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(107, 63, 29, 0.35);
   color: var(--color-white);
 }
 
 .btn-secondary {
-  background: var(--color-white);
-  color: var(--color-secondary);
-  border: 2px solid var(--color-secondary);
+  background: transparent;
+  color: var(--color-primary);
+  border: 1.5px solid var(--color-primary);
 }
 
 .btn-secondary:hover {
-  background: var(--color-secondary);
+  background: var(--color-primary);
   color: var(--color-white);
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
 /* Main Layout */
@@ -204,21 +215,21 @@ section {
     --font-size-base: 15px;
   }
 
-  h1 { font-size: 2.25rem; }
-  h2 { font-size: 1.75rem; }
-  h3 { font-size: 1.5rem; }
+  h1 { font-size: 2.4rem; }
+  h2 { font-size: 1.85rem; }
+  h3 { font-size: 1.4rem; }
 }
 
 /* Focus Styles for Accessibility */
 :focus-visible {
-  outline: 3px solid var(--color-primary);
+  outline: 3px solid var(--color-secondary);
   outline-offset: 2px;
 }
 
 /* Selection Styles */
 ::selection {
   background: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-cream);
 }
 
 /* Scrollbar Styles (WebKit) */
@@ -227,7 +238,7 @@ section {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-gray-100);
+  background: var(--color-cream);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -236,7 +247,7 @@ section {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-gray-500);
+  background: var(--color-primary);
 }
 
 /* Print Styles */

@@ -6,21 +6,21 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
 ---
 
 <BaseLayout
-  title="Sales Agreement | Michael Paws"
-  description="Review and sign our Staffordshire Bull Terrier puppy sales agreement. Michael Paws — premium Staffie breeder."
-  keywords="puppy sales agreement, Staffordshire Bull Terrier purchase contract, breeder contract, michael paws"
+  title="Sales Agreement | Healthy Staffords"
+  description="Review and sign our Staffordshire Bull Terrier puppy sales agreement. Healthy Staffords — premium Staffie breeder."
+  keywords="puppy sales agreement, Staffordshire Bull Terrier purchase contract, breeder contract, healthy staffords"
 >
   <PageHeader
     title="Sales Agreement"
-    subtitle="Staffordshire Bull Terrier Puppy Sales Agreement — Michael Paws"
+    subtitle="Staffordshire Bull Terrier Puppy Sales Agreement — Healthy Staffords"
   />
 
   <section class="agreement-section">
     <div class="agreement-container">
 
       <div class="agreement-intro">
-        <h2>Michael Paws Staffordshire Bull Terrier Puppy Sales Agreement</h2>
-        <p>Please review the terms below and complete the form to sign our sales agreement. This contract is between <strong>Michael Paws</strong> (referred to as the Seller) and the Buyer identified below.</p>
+        <h2>Healthy Staffords Staffordshire Bull Terrier Puppy Sales Agreement</h2>
+        <p>Please review the terms below and complete the form to sign our sales agreement. This contract is between <strong>Healthy Staffords</strong> (referred to as the Seller) and the Buyer identified below.</p>
       </div>
 
       <form class="agreement-form" id="agreementForm" action="https://submit-form.com/2lf3YfUv0" method="POST">
@@ -173,7 +173,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
 
     formData.delete('agree_terms');
     const data = Object.fromEntries(formData.entries());
-    data._email = { subject: "Sales Agreement Signed - Michael Paws", from: "Michael Paws Sales Agreement" };
+    data._email = { subject: "Sales Agreement Signed - Healthy Staffords", from: "Healthy Staffords Sales Agreement" };
 
     const originalHTML = submitBtn.innerHTML;
     submitBtn.innerHTML = "Submitting...";
@@ -203,7 +203,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
 <style>
   .agreement-section {
     padding: 4rem 1.5rem;
-    background: #F0F4F8;
+    background: #FBF5E9;
   }
 
   .agreement-container {
@@ -219,7 +219,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   .agreement-intro h2 {
     font-size: 1.75rem;
     font-weight: 700;
-    color: #1B2A4A;
+    color: #6B3F1D;
     margin: 0 0 0.75rem;
   }
 
@@ -237,13 +237,13 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
     padding: 2rem;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
     margin-bottom: 1.25rem;
-    border: 1px solid rgba(27, 42, 74, 0.08);
+    border: 1px solid rgba(107, 63, 29, 0.08);
   }
 
   .terms-card h3 {
     font-size: 1.15rem;
     font-weight: 700;
-    color: #1B2A4A;
+    color: #6B3F1D;
     margin: 0 0 1rem;
   }
 
@@ -260,7 +260,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
     line-height: 1.7;
     margin-bottom: 0.75rem;
     padding-left: 1rem;
-    border-left: 2px solid #E2E8F0;
+    border-left: 2px solid #E8DFCF;
   }
 
   .term-item strong {
@@ -274,20 +274,20 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
     padding: 2.5rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     margin-top: 2.5rem;
-    border: 2px solid rgba(27, 42, 74, 0.12);
+    border: 2px solid rgba(107, 63, 29, 0.12);
   }
 
   .form-header {
     text-align: center;
     margin-bottom: 2rem;
     padding-bottom: 1.5rem;
-    border-bottom: 1px solid #E2E8F0;
+    border-bottom: 1px solid #E8DFCF;
   }
 
   .form-header h2 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #1B2A4A;
+    color: #6B3F1D;
     margin: 0 0 0.5rem;
   }
 
@@ -343,7 +343,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   .form-group select:focus,
   .form-group textarea:focus {
     outline: none;
-    border-color: #1B2A4A;
+    border-color: #6B3F1D;
     background: white;
   }
 
@@ -367,12 +367,12 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   }
 
   .radio-option:hover {
-    background: #F0F4F8;
-    border-color: #2E8B8B;
+    background: #FBF5E9;
+    border-color: #C87348;
   }
 
   .radio-option input[type="radio"] {
-    accent-color: #1B2A4A;
+    accent-color: #6B3F1D;
   }
 
   .puppy-checkbox-grid {
@@ -394,7 +394,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   }
 
   .puppy-checkbox:hover {
-    background: #F0F4F8;
+    background: #FBF5E9;
   }
 
   .puppy-checkbox input[type="checkbox"] {
@@ -415,8 +415,8 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
 
   .puppy-checkbox input[type="checkbox"]:checked + .checkbox-custom,
   .agree-checkbox input[type="checkbox"]:checked + .checkbox-custom {
-    background: #1B2A4A;
-    border-color: #1B2A4A;
+    background: #6B3F1D;
+    border-color: #6B3F1D;
   }
 
   .puppy-checkbox input[type="checkbox"]:checked + .checkbox-custom::after,
@@ -435,8 +435,8 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   }
 
   .agreement-check {
-    background: #F0F4F8;
-    border: 1px solid #2E8B8B;
+    background: #FBF5E9;
+    border: 1px solid #C87348;
     border-radius: 10px;
     padding: 1.25rem;
   }
@@ -466,7 +466,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   .signature-card-title {
     font-size: 1.25rem;
     font-weight: 700;
-    color: #1B2A4A;
+    color: #6B3F1D;
     margin: 0 0 1.25rem;
   }
 
@@ -475,13 +475,13 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   }
 
   .signature-card .agreement-check a {
-    color: #2E8B8B;
+    color: #C87348;
     text-decoration: underline;
     font-weight: 600;
   }
 
   .signature-card .agreement-check a:hover {
-    color: #1B2A4A;
+    color: #6B3F1D;
   }
 
   .signature-section {
@@ -498,7 +498,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   .signature-input-wrapper input {
     width: 100%;
     padding: 1.25rem 1rem;
-    border: 2px dashed #1B2A4A;
+    border: 2px dashed #6B3F1D;
     border-radius: 10px;
     font-size: 1.2rem;
     font-family: 'Georgia', serif;
@@ -517,7 +517,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
 
   .signature-input-wrapper input:focus {
     outline: none;
-    border-color: #2E8B8B;
+    border-color: #C87348;
     background-color: #fff;
   }
 
@@ -543,7 +543,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    background: linear-gradient(135deg, #1B2A4A, #2E8B8B);
+    background: linear-gradient(135deg, #6B3F1D, #C87348);
     color: white;
     padding: 1rem 2rem;
     border: none;
@@ -556,7 +556,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
 
   .btn-submit:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(27, 42, 74, 0.3);
+    box-shadow: 0 4px 15px rgba(107, 63, 29, 0.3);
   }
 
   .btn-submit:disabled {
@@ -569,21 +569,21 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
     align-items: center;
     justify-content: center;
     padding: 1rem 2rem;
-    border: 2px solid #1B2A4A;
+    border: 2px solid #6B3F1D;
     border-radius: 50px;
     font-size: 1rem;
     font-weight: 600;
-    color: #1B2A4A;
+    color: #6B3F1D;
     background: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
   }
 
   .btn-download:hover {
-    background: #1B2A4A;
+    background: #6B3F1D;
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(27, 42, 74, 0.3);
+    box-shadow: 0 4px 15px rgba(107, 63, 29, 0.3);
   }
 
   @media (max-width: 600px) {

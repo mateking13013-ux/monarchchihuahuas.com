@@ -77,9 +77,9 @@ const testimonialImages = [
 <style>
   .testimonials-section {
     display: block;
-    font-family: var(--font-family, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif);
-    background: linear-gradient(135deg, #1B2A4A 0%, #0F1B33 100%);
-    padding: 4rem 1.5rem;
+    font-family: var(--font-family);
+    background: var(--color-cream-dark);
+    padding: 5rem 1.5rem;
     position: relative;
     overflow: hidden;
   }
@@ -109,29 +109,46 @@ const testimonialImages = [
 
   .section-badge {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    padding: 0.4rem 1rem;
-    border-radius: 50px;
-    font-size: 0.85rem;
+    font-family: var(--font-family);
+    font-size: 0.78rem;
     font-weight: 600;
-    margin-bottom: 1rem;
-    backdrop-filter: blur(10px);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    margin-bottom: 0.9rem;
+    position: relative;
+    padding: 0 28px;
   }
 
+  .section-badge::before,
+  .section-badge::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 1.5px;
+    background: var(--color-secondary);
+  }
+
+  .section-badge::before { left: 0; }
+  .section-badge::after { right: 0; }
+
   .section-title {
-    font-size: 2.25rem;
-    font-weight: 700;
-    color: white;
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 3.4vw, 2.9rem);
+    font-weight: 600;
+    color: var(--color-gray-900);
     margin: 0 0 0.75rem;
+    letter-spacing: -0.02em;
   }
 
   .section-subtitle {
-    font-size: 1.05rem;
-    color: rgba(255, 255, 255, 0.9);
-    margin: 0;
-    max-width: 500px;
+    font-family: var(--font-family);
+    font-size: 1.02rem;
+    color: var(--color-gray-700);
     margin: 0 auto;
+    max-width: 540px;
+    line-height: 1.7;
   }
 
   /* Image Gallery - Masonry Style */
@@ -168,11 +185,12 @@ const testimonialImages = [
 
   .testimonial-card {
     break-inside: avoid;
-    background: white;
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-200);
     border-radius: 16px;
     padding: 1.75rem;
     margin-bottom: 1.5rem;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 20px rgba(74, 43, 20, 0.06);
   }
 
   .testimonial-header {
@@ -187,7 +205,7 @@ const testimonialImages = [
     height: 55px;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid #1B2A4A;
+    border: 3px solid #6B3F1D;
     flex-shrink: 0;
   }
 
@@ -205,7 +223,7 @@ const testimonialImages = [
   .customer-name {
     font-size: 1rem;
     font-weight: 700;
-    color: #2a2a2a;
+    color: #2B2018;
     margin: 0 0 0.2rem;
   }
 
@@ -224,7 +242,7 @@ const testimonialImages = [
   .star {
     width: 16px;
     height: 16px;
-    fill: #FFD700;
+    fill: #D4A35A;
   }
 
   .testimonial-text {
@@ -239,18 +257,18 @@ const testimonialImages = [
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    background: #F0F4F8;
+    background: #FBF5E9;
     padding: 0.4rem 0.9rem;
     border-radius: 50px;
     font-size: 0.8rem;
-    color: #1B2A4A;
+    color: #6B3F1D;
     font-weight: 600;
   }
 
   .puppy-tag svg {
     width: 14px;
     height: 14px;
-    fill: #1B2A4A;
+    fill: #6B3F1D;
   }
 
   @media (max-width: 1100px) {

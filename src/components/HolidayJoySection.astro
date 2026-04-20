@@ -1,283 +1,198 @@
 ---
-// HolidayJoySection component
+// HolidayJoySection — repurposed as "Coming Home" full-bleed editorial CTA
 ---
 
-<section class="holiday-section">
-  <div class="section-container">
-    <div class="content-wrapper">
-      <div class="holiday-content">
-        <span class="section-badge">The Difference</span>
-        <h2 class="section-title">
-          Experience the <span>Michael Paws</span> Difference
-        </h2>
-        <p class="section-description">
-          What sets us apart is our commitment to raising healthy, well-tempered Staffordshire Bull Terrier puppies in a genuine family environment. Every puppy receives individual attention and love from day one.
-        </p>
-
-        <div class="holiday-features">
-          <div class="feature-item">
-            <span class="feature-icon">
-              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-            </span>
-            <span class="feature-text">Raised with love in our home</span>
-          </div>
-          <div class="feature-item">
-            <span class="feature-icon">
-              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-            </span>
-            <span class="feature-text">Complete health documentation</span>
-          </div>
-          <div class="feature-item">
-            <span class="feature-icon">
-              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-            </span>
-            <span class="feature-text">Ongoing breeder support</span>
-          </div>
-          <div class="feature-item">
-            <span class="feature-icon">
-              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-            </span>
-            <span class="feature-text">Ready for their forever family</span>
-          </div>
-        </div>
-
-        <a href="/contact" class="btn-holiday">
-          Contact Us Today
-          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-        </a>
-      </div>
-
-      <div class="holiday-images">
-        <div class="image-card image-main">
-          <img src="/images/h1.jpeg" alt="Beautiful Staffie ready for a loving home" loading="lazy">
-        </div>
-        <div class="image-card image-small-top">
-          <img src="/images/h3.jpeg" alt="Adorable Staffie companion" loading="lazy">
-        </div>
-        <div class="image-card image-small-bottom">
-          <img src="/images/h4.jpeg" alt="Sweet Staffie looking for a family" loading="lazy">
-        </div>
-      </div>
-    </div>
+<section class="coming-home">
+  <div class="bg-image">
+    <img src="/images/h1.jpeg" alt="A Healthy Staffords puppy in the golden hour" />
   </div>
+  <div class="overlay"></div>
 
-  <div class="decorative-stars">
-    <span class="star star-1">&#10022;</span>
-    <span class="star star-2">&#10022;</span>
-    <span class="star star-3">&#10022;</span>
+  <div class="coming-inner">
+    <span class="kicker">Reserving Now · Spring &amp; Summer Litters</span>
+    <h2 class="coming-title">
+      The right Staffie<br>
+      is <em>waiting</em> for you.
+    </h2>
+    <p class="coming-lede">
+      Our next wave of puppies is already home with us — nursing, napping, and starting the first steps of early socialization. We place only a handful each season, and they go quickly to families we've had time to know.
+    </p>
+    <div class="coming-actions">
+      <a href="/available-puppies" class="cta">
+        View This Season's Puppies
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="/contact" class="cta-line">Start a Conversation</a>
+    </div>
+
+    <div class="signature">
+      <span class="sig-swoosh"></span>
+      <span>— raised, loved, and ready, The Healthy Staffords Family</span>
+    </div>
   </div>
 </section>
 
 <style>
-  .holiday-section {
-    display: block;
-    font-family: var(--font-family, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif);
-    background: #F0F4F8;
-    padding: 4rem 1.5rem;
+  .coming-home {
     position: relative;
+    min-height: 620px;
     overflow: hidden;
-  }
-
-  .section-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-  }
-
-  .content-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
-  }
-
-  .holiday-content {
-    color: #2a2a2a;
-  }
-
-  .section-badge {
-    display: inline-block;
-    background: rgba(27, 42, 74, 0.1);
-    color: #1B2A4A;
-    padding: 0.4rem 1rem;
-    border-radius: 50px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-
-  .section-title {
-    font-size: 2.25rem;
-    font-weight: 700;
-    margin: 0 0 1rem;
-    line-height: 1.2;
-    color: #2a2a2a;
-  }
-
-  .section-title span {
-    color: #1B2A4A;
-  }
-
-  .section-description {
-    font-size: 1.05rem;
-    line-height: 1.7;
-    color: #5a5a5a;
-    margin: 0 0 1.5rem;
-  }
-
-  .holiday-features {
-    display: flex;
-    flex-direction: column;
-    gap: 0.875rem;
-    margin-bottom: 2rem;
-  }
-
-  .feature-item {
+    padding: 0;
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    color: var(--color-cream);
   }
 
-  .feature-icon {
-    width: 24px;
-    height: 24px;
-    background: #FFD700;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+  .bg-image {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
   }
 
-  .feature-icon svg {
-    width: 14px;
-    height: 14px;
-    fill: #1B2A4A;
-  }
-
-  .feature-text {
-    font-size: 1rem;
-    color: #4a4a4a;
-  }
-
-  .btn-holiday {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: #1B2A4A;
-    color: white;
-    padding: 1rem 2rem;
-    border-radius: 50px;
-    font-size: 1rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(27, 42, 74, 0.4);
-  }
-
-  .btn-holiday:hover {
-    background: #2E8B8B;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(27, 42, 74, 0.5);
-  }
-
-  .btn-holiday svg {
-    width: 18px;
-    height: 18px;
-    fill: currentColor;
-  }
-
-  .holiday-images {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-    height: 400px;
-  }
-
-  .image-card {
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  }
-
-  .image-card img {
+  .bg-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center 35%;
+    filter: saturate(1.05) contrast(1.02);
   }
 
-  .image-main {
-    grid-row: 1 / -1;
-  }
-
-  .decorative-stars {
+  .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
+    inset: 0;
+    background:
+      linear-gradient(100deg, rgba(43, 32, 24, 0.88) 0%, rgba(43, 32, 24, 0.55) 55%, rgba(43, 32, 24, 0.1) 100%),
+      linear-gradient(180deg, rgba(31, 23, 18, 0.2) 0%, rgba(31, 23, 18, 0.55) 100%);
+    z-index: 1;
   }
 
-  .star {
-    position: absolute;
-    color: rgba(27, 42, 74, 0.1);
-    font-size: 2rem;
+  .coming-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 6rem 2rem;
   }
 
-  .star-1 {
-    top: 10%;
-    left: 5%;
-    font-size: 1.5rem;
+  .kicker {
+    display: inline-block;
+    font-family: var(--font-family);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--color-gold);
+    background: rgba(212, 163, 90, 0.12);
+    border: 1px solid rgba(212, 163, 90, 0.4);
+    padding: 0.55rem 1rem;
+    border-radius: 999px;
+    margin-bottom: 1.8rem;
   }
 
-  .star-2 {
-    top: 20%;
-    right: 10%;
-    font-size: 2.5rem;
+  .coming-title {
+    font-family: var(--font-serif);
+    font-size: clamp(2.4rem, 5.4vw, 4.8rem);
+    font-weight: 600;
+    line-height: 1.02;
+    color: var(--color-cream);
+    margin: 0 0 1.5rem;
+    letter-spacing: -0.025em;
+    max-width: 720px;
   }
 
-  .star-3 {
-    bottom: 15%;
-    left: 15%;
-    font-size: 1.75rem;
+  .coming-title em {
+    font-style: italic;
+    font-weight: 500;
+    color: var(--color-gold);
   }
 
-  @media (max-width: 900px) {
-    .content-wrapper {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
-
-    .holiday-images {
-      order: -1;
-      height: 300px;
-    }
+  .coming-lede {
+    font-size: 1.12rem;
+    line-height: 1.75;
+    color: rgba(251, 245, 233, 0.88);
+    margin: 0 0 2.5rem;
+    max-width: 560px;
   }
 
-  @media (max-width: 600px) {
-    .holiday-section {
-      padding: 3rem 1rem;
-    }
+  .coming-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.25rem;
+    align-items: center;
+    margin-bottom: 3.5rem;
+  }
 
-    .section-title {
-      font-size: 1.75rem;
-    }
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: var(--color-cream);
+    color: var(--color-gray-900);
+    padding: 1.1rem 1.9rem;
+    border-radius: 999px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 0.98rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.25);
+  }
 
-    .holiday-images {
-      grid-template-columns: 1fr 1fr;
-      height: 250px;
-    }
+  .cta:hover {
+    background: var(--color-gold);
+    color: var(--color-gray-900);
+    transform: translateY(-2px);
+  }
 
-    .image-main {
-      grid-row: auto;
-      grid-column: 1 / -1;
-    }
+  .cta svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+  }
 
-    .decorative-stars {
-      display: none;
-    }
+  .cta:hover svg { transform: translateX(3px); }
+
+  .cta-line {
+    display: inline-flex;
+    align-items: center;
+    padding: 1.1rem 0;
+    color: var(--color-cream);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 0.98rem;
+    text-decoration: none;
+    border-bottom: 1.5px solid rgba(251, 245, 233, 0.6);
+    transition: all 0.25s ease;
+  }
+
+  .cta-line:hover {
+    color: var(--color-gold);
+    border-color: var(--color-gold);
+  }
+
+  .signature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.02rem;
+    color: rgba(251, 245, 233, 0.75);
+  }
+
+  .sig-swoosh {
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background: var(--color-gold);
+  }
+
+  @media (max-width: 760px) {
+    .coming-home { min-height: 540px; }
+    .coming-inner { padding: 4rem 1.25rem; }
+    .coming-lede { font-size: 1rem; }
+    .cta { padding: 0.95rem 1.5rem; font-size: 0.92rem; }
+    .signature { font-size: 0.9rem; }
   }
 </style>

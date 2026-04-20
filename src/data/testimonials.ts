@@ -23,7 +23,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     image: '/images/testi-1.jpeg',
     puppyName: 'Alex',
-    text: "Alex is the sweetest Staffie! He came to us healthy, playful, and already started on potty training. Michael Paws made the whole process so easy and even checked in on us weeks after bringing him home."
+    text: "Alex is the sweetest Staffie! He came to us healthy, playful, and already started on potty training. Healthy Staffords made the whole process so easy and even checked in on us weeks after bringing him home."
   },
   {
     name: 'Jessica R.',
@@ -31,7 +31,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     image: '/images/testi-2.jpeg',
     puppyName: 'Cooper',
-    text: "Cooper has the best personality of any Staffie I've ever met! He's so smart and loves to cuddle. The team at Michael Paws was incredibly helpful and answered all our questions about Staffie care."
+    text: "Cooper has the best personality of any Staffie I've ever met! He's so smart and loves to cuddle. The team at Healthy Staffords was incredibly helpful and answered all our questions about Staffie care."
   },
   {
     name: 'David & Karen W.',
@@ -39,7 +39,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     image: '/images/testi-3.jpeg',
     puppyName: 'Gracie',
-    text: "This was our first Staffordshire Bull Terrier and Michael Paws made it such a wonderful experience. Gracie is everything we dreamed of — loyal, funny, and full of energy. The health guarantee gave us total peace of mind."
+    text: "This was our first Staffordshire Bull Terrier and Healthy Staffords made it such a wonderful experience. Gracie is everything we dreamed of — loyal, funny, and full of energy. The health guarantee gave us total peace of mind."
   },
   {
     name: 'Emily C.',
@@ -47,7 +47,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     image: '/images/testi-4.jpeg',
     puppyName: 'Kobe',
-    text: "Kobe is the star of our neighborhood! Everyone stops to ask about him. He's so well-socialized and confident. You can tell Michael Paws raises their Staffies with genuine love and attention."
+    text: "Kobe is the star of our neighborhood! Everyone stops to ask about him. He's so well-socialized and confident. You can tell Healthy Staffords raises their Staffies with genuine love and attention."
   },
   {
     name: 'James & Lisa M.',
@@ -55,7 +55,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     image: '/images/testi-5.jpeg',
     puppyName: 'Bella',
-    text: "Bella has been the perfect addition to our family. Our kids are obsessed with him! He came with all his vaccinations, vet records, and a starter kit. Michael Paws truly goes above and beyond."
+    text: "Bella has been the perfect addition to our family. Our kids are obsessed with him! He came with all his vaccinations, vet records, and a starter kit. Healthy Staffords truly goes above and beyond."
   },
   {
     name: 'Rachel P.',
@@ -71,7 +71,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     image: '/images/testi-7.jpeg',
     puppyName: 'Thor',
-    text: "Thor is our second Staffie from Michael Paws and the experience was just as amazing. He and his sister are inseparable now. The breeding quality and temperament are consistently outstanding."
+    text: "Thor is our second Staffie from Healthy Staffords and the experience was just as amazing. He and his sister are inseparable now. The breeding quality and temperament are consistently outstanding."
   },
   {
     name: 'Michelle H.',
@@ -79,7 +79,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     image: '/images/testi-8.jpeg',
     puppyName: 'Rex',
-    text: "From the first inquiry to bringing Rex home, Michael Paws was professional and caring. Rex's coat is gorgeous and his personality is even better. He's already mastered sit and shake!"
+    text: "From the first inquiry to bringing Rex home, Healthy Staffords was professional and caring. Rex's coat is gorgeous and his personality is even better. He's already mastered sit and shake!"
   }
 ];
 
@@ -88,7 +88,7 @@ export const testimonialPreviews: TestimonialPreview[] = [
     initials: 'ST',
     name: 'Sarah Thompson',
     rating: 5,
-    text: "We absolutely love our little Bella from Michael Paws! She's the sweetest Staffie — healthy, well-socialized, and full of personality. The team was so helpful throughout the entire process.",
+    text: "We absolutely love our little Bella from Healthy Staffords! She's the sweetest Staffie — healthy, well-socialized, and full of personality. The team was so helpful throughout the entire process.",
     location: 'Austin, TX',
     timeAgo: '2 weeks ago'
   },
@@ -96,7 +96,7 @@ export const testimonialPreviews: TestimonialPreview[] = [
     initials: 'JR',
     name: 'Jessica Reynolds',
     rating: 5,
-    text: "Best decision we ever made! Our Staffie Charlie has brought so much joy to our family. Michael Paws provided excellent care and the health guarantee gave us peace of mind.",
+    text: "Best decision we ever made! Our Staffie Charlie has brought so much joy to our family. Healthy Staffords provided excellent care and the health guarantee gave us peace of mind.",
     location: 'Nashville, TN',
     timeAgo: '1 month ago'
   },
@@ -120,7 +120,7 @@ export const testimonialPreviews: TestimonialPreview[] = [
     initials: 'JM',
     name: 'James Mitchell',
     rating: 5,
-    text: "Our Staffie Hazel is everything we hoped for and more. Beautiful coat, wonderful temperament, and so smart! Michael Paws truly cares about their puppies.",
+    text: "Our Staffie Hazel is everything we hoped for and more. Beautiful coat, wonderful temperament, and so smart! Healthy Staffords truly cares about their puppies.",
     location: 'Scottsdale, AZ',
     timeAgo: '2 months ago'
   },
@@ -136,7 +136,7 @@ export const testimonialPreviews: TestimonialPreview[] = [
     initials: 'BS',
     name: 'Brandon Scott',
     rating: 5,
-    text: "This was our second Staffie from Michael Paws and the experience was just as wonderful. Rocky and his sister are best friends now! Consistently amazing breeding quality.",
+    text: "This was our second Staffie from Healthy Staffords and the experience was just as wonderful. Rocky and his sister are best friends now! Consistently amazing breeding quality.",
     location: 'Atlanta, GA',
     timeAgo: '3 months ago'
   },
@@ -152,7 +152,7 @@ export const testimonialPreviews: TestimonialPreview[] = [
     initials: 'KL',
     name: 'Kevin Lawson',
     rating: 5,
-    text: "Getting our Staffie from Michael Paws was the highlight of our year. She's perfectly healthy with the sweetest personality. The ongoing support has been incredible.",
+    text: "Getting our Staffie from Healthy Staffords was the highlight of our year. She's perfectly healthy with the sweetest personality. The ongoing support has been incredible.",
     location: 'Dallas, TX',
     timeAgo: '1 month ago'
   },
@@ -168,7 +168,7 @@ export const testimonialPreviews: TestimonialPreview[] = [
     initials: 'TN',
     name: 'Tyler Nelson',
     rating: 5,
-    text: "We couldn't be happier with our decision to get our Staffie from Michael Paws. He's settled in perfectly and loves playing with our kids. A true family dog!",
+    text: "We couldn't be happier with our decision to get our Staffie from Healthy Staffords. He's settled in perfectly and loves playing with our kids. A true family dog!",
     location: 'Miami, FL',
     timeAgo: '1 month ago'
   },
@@ -176,7 +176,7 @@ export const testimonialPreviews: TestimonialPreview[] = [
     initials: 'LB',
     name: 'Lauren Baker',
     rating: 5,
-    text: "What a wonderful experience! The team at Michael Paws genuinely cares about matching the right Staffie with the right family. Our little girl is proof of that love.",
+    text: "What a wonderful experience! The team at Healthy Staffords genuinely cares about matching the right Staffie with the right family. Our little girl is proof of that love.",
     location: 'Seattle, WA',
     timeAgo: '4 weeks ago'
   },
@@ -184,7 +184,7 @@ export const testimonialPreviews: TestimonialPreview[] = [
     initials: 'CM',
     name: 'Chris Martinez',
     rating: 5,
-    text: "Professional, caring, and trustworthy. That's how I'd describe Michael Paws. Our Staffie is everything we wanted — playful, healthy, and so loyal!",
+    text: "Professional, caring, and trustworthy. That's how I'd describe Healthy Staffords. Our Staffie is everything we wanted — playful, healthy, and so loyal!",
     location: 'Phoenix, AZ',
     timeAgo: '2 weeks ago'
   },
@@ -192,7 +192,7 @@ export const testimonialPreviews: TestimonialPreview[] = [
     initials: 'NW',
     name: 'Nicole Walker',
     rating: 5,
-    text: "We drove from Houston to pick up our Staffie and it was absolutely worth the trip. Michael Paws's dedication to their puppies is evident the moment you meet them.",
+    text: "We drove from Houston to pick up our Staffie and it was absolutely worth the trip. Healthy Staffords's dedication to their puppies is evident the moment you meet them.",
     location: 'Houston, TX',
     timeAgo: '5 weeks ago'
   },
@@ -200,7 +200,7 @@ export const testimonialPreviews: TestimonialPreview[] = [
     initials: 'RD',
     name: 'Ryan Davis',
     rating: 5,
-    text: "Our miniature Staffie from Michael Paws has the most amazing temperament. He's great with strangers, kids, and other dogs. Couldn't have asked for a better breeder experience.",
+    text: "Our miniature Staffie from Healthy Staffords has the most amazing temperament. He's great with strangers, kids, and other dogs. Couldn't have asked for a better breeder experience.",
     location: 'Boston, MA',
     timeAgo: '3 weeks ago'
   },
@@ -208,7 +208,7 @@ export const testimonialPreviews: TestimonialPreview[] = [
     initials: 'SW',
     name: 'Stephanie Wilson',
     rating: 5,
-    text: "I researched Staffie breeders for months and Michael Paws stood out. The communication was excellent from day one, and our puppy arrived healthy with a beautiful coat.",
+    text: "I researched Staffie breeders for months and Healthy Staffords stood out. The communication was excellent from day one, and our puppy arrived healthy with a beautiful coat.",
     location: 'Minneapolis, MN',
     timeAgo: '6 weeks ago'
   },
@@ -216,7 +216,7 @@ export const testimonialPreviews: TestimonialPreview[] = [
     initials: 'JA',
     name: 'Jason Andrews',
     rating: 5,
-    text: "Michael Paws exceeded all our expectations. Our Staffie is so well-behaved and loving. The whole family is obsessed with him. Already planning to get a second!",
+    text: "Healthy Staffords exceeded all our expectations. Our Staffie is so well-behaved and loving. The whole family is obsessed with him. Already planning to get a second!",
     location: 'Raleigh, NC',
     timeAgo: '2 weeks ago'
   },
@@ -232,7 +232,7 @@ export const testimonialPreviews: TestimonialPreview[] = [
     initials: 'MG',
     name: 'Michael Green',
     rating: 5,
-    text: "Our little Staffie has been the best addition to our family. She's so playful and loves everyone she meets. Michael Paws made the whole process stress-free!",
+    text: "Our little Staffie has been the best addition to our family. She's so playful and loves everyone she meets. Healthy Staffords made the whole process stress-free!",
     location: 'Tampa, FL',
     timeAgo: '3 weeks ago'
   },
@@ -240,7 +240,7 @@ export const testimonialPreviews: TestimonialPreview[] = [
     initials: 'KR',
     name: 'Katie Robinson',
     rating: 5,
-    text: "I can't say enough good things about Michael Paws. Our puppy arrived healthy, happy, and already knew basic commands. The support we've received has been amazing.",
+    text: "I can't say enough good things about Healthy Staffords. Our puppy arrived healthy, happy, and already knew basic commands. The support we've received has been amazing.",
     location: 'Salt Lake City, UT',
     timeAgo: '1 month ago'
   },
@@ -256,7 +256,7 @@ export const testimonialPreviews: TestimonialPreview[] = [
     initials: 'AC',
     name: 'Ashley Cooper',
     rating: 5,
-    text: "We were nervous about getting a puppy shipped to us, but Michael Paws handled everything perfectly. Our Staffie arrived safe and sound!",
+    text: "We were nervous about getting a puppy shipped to us, but Healthy Staffords handled everything perfectly. Our Staffie arrived safe and sound!",
     location: 'Kansas City, MO',
     timeAgo: '5 weeks ago'
   },
@@ -264,7 +264,7 @@ export const testimonialPreviews: TestimonialPreview[] = [
     initials: 'BH',
     name: 'Brian Hughes',
     rating: 5,
-    text: "The communication from Michael Paws was excellent throughout the entire process. They sent us updates and photos before our puppy came home.",
+    text: "The communication from Healthy Staffords was excellent throughout the entire process. They sent us updates and photos before our puppy came home.",
     location: 'San Antonio, TX',
     timeAgo: '3 weeks ago'
   },
@@ -272,7 +272,7 @@ export const testimonialPreviews: TestimonialPreview[] = [
     initials: 'JL',
     name: 'Jennifer Lewis',
     rating: 5,
-    text: "Our Staffie has the sweetest personality. She loves to cuddle and play. Michael Paws truly cares about finding the right homes for their puppies.",
+    text: "Our Staffie has the sweetest personality. She loves to cuddle and play. Healthy Staffords truly cares about finding the right homes for their puppies.",
     location: 'Pittsburgh, PA',
     timeAgo: '1 month ago'
   },
@@ -280,7 +280,7 @@ export const testimonialPreviews: TestimonialPreview[] = [
     initials: 'RB',
     name: 'Robert Brown',
     rating: 5,
-    text: "We've had our puppy for 6 months now and she's absolutely perfect. Healthy, happy, and full of energy. Thank you Michael Paws!",
+    text: "We've had our puppy for 6 months now and she's absolutely perfect. Healthy, happy, and full of energy. Thank you Healthy Staffords!",
     location: 'Oklahoma City, OK',
     timeAgo: '6 weeks ago'
   },
@@ -288,7 +288,7 @@ export const testimonialPreviews: TestimonialPreview[] = [
     initials: 'SJ',
     name: 'Samantha Jones',
     rating: 5,
-    text: "From start to finish, Michael Paws provided exceptional service. Our Staffie is everything we wanted and more. Highly recommend to anyone!",
+    text: "From start to finish, Healthy Staffords provided exceptional service. Our Staffie is everything we wanted and more. Highly recommend to anyone!",
     location: 'Milwaukee, WI',
     timeAgo: '2 weeks ago'
   }
