@@ -4,13 +4,13 @@ import PageHeader from '../components/PageHeader.astro';
 ---
 
 <BaseLayout
-  title="Thank You | Healthy Staffords"
-  description="Thank you for your interest in Healthy Staffords. We appreciate you reaching out to us."
-  keywords="thank you, Healthy Staffords, puppy inquiry"
+  title="Thank You | Monarch Doodles"
+  description="Thank you for your interest in Monarch Doodles. We appreciate you reaching out to us."
+  keywords="thank you, Monarch Doodles, puppy inquiry"
 >
   <PageHeader
     title="Thank You!"
-    subtitle="We appreciate your interest in Healthy Staffords"
+    subtitle="We appreciate your interest in Monarch Doodles"
   />
 
   <section class="thank-you-section">
@@ -24,7 +24,7 @@ import PageHeader from '../components/PageHeader.astro';
 
         <h2>Your Message Has Been Received!</h2>
 
-        <p>Thank you for reaching out to us at Healthy Staffords. We truly appreciate your interest in our puppies and our family.</p>
+        <p>Thank you for reaching out to us at Monarch Doodles. We truly appreciate your interest in our puppies and our family.</p>
 
         <p>Our team will review your inquiry and get back to you as soon as possible, usually within 24-48 hours.</p>
 
@@ -58,12 +58,12 @@ import PageHeader from '../components/PageHeader.astro';
       <div class="book-card">
         <div class="book-card-layout">
           <div class="book-card-cover">
-            <img src="/images/pdfbookcover.jpeg" alt="The Happy Staffordshire Bull Terrier - Book Cover" />
+            <img src="/images/banner-1.jpg" alt="The Happy Doodle - Book Cover" />
           </div>
           <div class="book-card-content">
             <h3>A Gift From Us To You</h3>
-            <p>While you wait to hear back from us, enjoy our free guide — <strong>The Happy Staffordshire Bull Terrier</strong>. With years of breeding experience, we've put this book together to help you understand and care for your Staffie.</p>
-            <a href="/books/the-happy-staffordshire-bull-terrier.pdf" download class="btn-download">
+            <p>While you wait to hear back from us, enjoy our free guide — <strong>The Happy Doodle</strong>. With years of breeding experience, we've put this book together to help you understand and care for your Doodle.</p>
+            <a href="/books/the-happy-doodle.pdf" download class="btn-download">
               <svg viewBox="0 0 24 24" class="download-icon"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
               Download Free PDF
             </a>
@@ -83,7 +83,7 @@ import PageHeader from '../components/PageHeader.astro';
 <style>
   .thank-you-section {
     padding: 4rem 1.5rem;
-    background: #FBF5E9;
+    background: var(--color-cream);
   }
 
   .thank-you-container {
@@ -103,7 +103,7 @@ import PageHeader from '../components/PageHeader.astro';
   .icon-wrapper {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #6B3F1D, #6B3F1D);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary));
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -154,16 +154,16 @@ import PageHeader from '../components/PageHeader.astro';
   }
 
   .check {
-    color: #6B3F1D;
+    color: var(--color-primary);
     font-weight: 700;
     font-size: 1.1rem;
   }
 
   .note {
-    background: #FBF5E9;
+    background: var(--color-cream);
     padding: 1rem 1.5rem;
     border-radius: 8px;
-    border-left: 4px solid #6B3F1D;
+    border-left: 4px solid var(--color-primary);
     margin: 2rem auto;
     max-width: 500px;
     text-align: left;
@@ -178,7 +178,7 @@ import PageHeader from '../components/PageHeader.astro';
   }
 
   .btn-primary {
-    background: #6B3F1D;
+    background: var(--color-primary);
     color: white;
     padding: 1rem 2rem;
     border-radius: 8px;
@@ -189,24 +189,24 @@ import PageHeader from '../components/PageHeader.astro';
   }
 
   .btn-primary:hover {
-    background: #C87348;
+    background: var(--color-secondary);
     transform: translateY(-2px);
   }
 
   .btn-secondary {
     background: transparent;
-    color: #6B3F1D;
+    color: var(--color-primary);
     padding: 1rem 2rem;
     border-radius: 8px;
     font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
-    border: 2px solid #6B3F1D;
+    border: 2px solid var(--color-primary);
     transition: all 0.3s ease;
   }
 
   .btn-secondary:hover {
-    background: #C87348;
+    background: var(--color-secondary);
     color: white;
   }
 
@@ -241,7 +241,7 @@ import PageHeader from '../components/PageHeader.astro';
   .book-card-content h3 {
     font-size: 1.4rem;
     font-weight: 700;
-    color: #6B3F1D;
+    color: var(--color-primary);
     margin: 0 0 0.75rem;
   }
 
@@ -258,7 +258,7 @@ import PageHeader from '../components/PageHeader.astro';
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: linear-gradient(135deg, #6B3F1D, #C87348);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
     color: white;
     padding: 0.75rem 1.5rem;
     border-radius: 50px;
@@ -282,7 +282,7 @@ import PageHeader from '../components/PageHeader.astro';
   }
 
   .info-card {
-    background: linear-gradient(135deg, #6B3F1D, #6B3F1D);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary));
     color: white;
     border-radius: 16px;
     padding: 2.5rem;

@@ -5,8 +5,8 @@ import InfoBox from '../components/InfoBox.astro';
 ---
 
 <BaseLayout
-  title="Return & Refund Policy | Healthy Staffords"
-  description="Our return and refund policy for our puppies at Healthy Staffords."
+  title="Return & Refund Policy | Monarch Doodles"
+  description="Our return and refund policy for our puppies at Monarch Doodles."
   keywords="puppy return policy, refund policy, breeder policy"
 >
   <PageHeader
@@ -96,7 +96,7 @@ import InfoBox from '../components/InfoBox.astro';
   h3 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #6B3F1D;
+    color: var(--color-primary);
     margin: 2rem 0 1rem;
   }
 
@@ -118,7 +118,7 @@ import InfoBox from '../components/InfoBox.astro';
   }
 
   .cta-box {
-    background: linear-gradient(135deg, #6B3F1D, #6B3F1D);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary));
     color: white;
     padding: 2rem;
     border-radius: 12px;
@@ -138,7 +138,7 @@ import InfoBox from '../components/InfoBox.astro';
 
   .btn {
     display: inline-block;
-    background: #6B3F1D;
+    background: var(--color-primary);
     color: white;
     padding: 0.875rem 2rem;
     border-radius: 8px;
@@ -149,7 +149,7 @@ import InfoBox from '../components/InfoBox.astro';
   }
 
   .btn:hover {
-    background: #C87348;
+    background: var(--color-secondary);
   }
 
   @media (max-width: 768px) {

@@ -1,12 +1,12 @@
 ---
-// FeaturedPuppies component - displays featured Staffie puppies
-const featuredPuppies = [
-  { name: 'Alex', gender: 'Male', image: '/images/alex.webp' },
-  { name: 'Ashley', gender: 'Female', image: '/images/ashley.webp' },
-  { name: 'Cooper', gender: 'Male', image: '/images/cooper.webp' },
-  { name: 'Gracie', gender: 'Female', image: '/images/gracie.webp' },
-  { name: 'Thor', gender: 'Male', image: '/images/thor.webp' },
-];
+import { puppies } from '../data/puppies';
+
+const featured = puppies.slice(0, 5).map(p => ({
+  name: p.name,
+  gender: p.sex,
+  breed: p.breed,
+  image: p.images[1] ?? p.images[0]
+}));
 ---
 
 <section class="featured-section">
@@ -15,19 +15,19 @@ const featuredPuppies = [
     <h2 class="section-title">
       Our <em>current</em> litter
     </h2>
-    <p class="section-subtitle">Hand-raised Staffordshire Bull Terriers — each one already home with us, each one waiting for yours.</p>
+    <p class="section-subtitle">Hand-raised Goldendoodles, Sheepadoodles &amp; Mini Sheepadoodles — each one already home with us, each one waiting for yours.</p>
   </div>
 
   <div class="puppies-container">
     <div class="puppies-grid">
-      {featuredPuppies.map((puppy) => (
+      {featured.map((puppy) => (
         <article class="puppy-card">
           <div class="card-image">
             <span class="rating-badge">
               <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
               5.0
             </span>
-            <img src={puppy.image} alt={puppy.name} loading="lazy">
+            <img src={puppy.image} alt={`${puppy.name} — ${puppy.breed}`} loading="lazy">
           </div>
           <div class="card-content">
             <h3 class="puppy-name">{puppy.name}</h3>
@@ -124,13 +124,13 @@ const featuredPuppies = [
     border-radius: 16px;
     overflow: hidden;
     border: 1px solid var(--color-gray-200);
-    box-shadow: 0 2px 8px rgba(74, 43, 20, 0.05);
+    box-shadow: 0 2px 8px rgba(255, 106, 26, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .puppy-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 20px 40px rgba(74, 43, 20, 0.14);
+    box-shadow: 0 20px 40px rgba(255, 106, 26, 0.18);
   }
 
   .card-image {
@@ -164,7 +164,7 @@ const featuredPuppies = [
     align-items: center;
     gap: 0.3rem;
     z-index: 1;
-    box-shadow: 0 4px 12px rgba(74, 43, 20, 0.15);
+    box-shadow: 0 4px 12px rgba(255, 106, 26, 0.20);
   }
 
   .rating-badge svg {
@@ -200,7 +200,7 @@ const featuredPuppies = [
     display: block;
     width: 100%;
     background: var(--color-primary);
-    color: var(--color-cream);
+    color: var(--color-white);
     padding: 0.75rem;
     border: none;
     border-radius: 999px;
@@ -279,10 +279,6 @@ const featuredPuppies = [
 
     .puppy-name {
       font-size: 1rem;
-    }
-
-    .current-price {
-      font-size: 1.15rem;
     }
   }
 </style>

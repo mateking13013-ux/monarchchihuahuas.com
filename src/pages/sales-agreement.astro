@@ -6,21 +6,21 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
 ---
 
 <BaseLayout
-  title="Sales Agreement | Healthy Staffords"
-  description="Review and sign our Staffordshire Bull Terrier puppy sales agreement. Healthy Staffords — premium Staffie breeder."
-  keywords="puppy sales agreement, Staffordshire Bull Terrier purchase contract, breeder contract, healthy staffords"
+  title="Sales Agreement | Monarch Doodles"
+  description="Review and sign our Doodle puppy sales agreement. Monarch Doodles — premium Doodle breeder."
+  keywords="puppy sales agreement, Doodle purchase contract, breeder contract, monarch doodles"
 >
   <PageHeader
     title="Sales Agreement"
-    subtitle="Staffordshire Bull Terrier Puppy Sales Agreement — Healthy Staffords"
+    subtitle="Doodle Puppy Sales Agreement — Monarch Doodles"
   />
 
   <section class="agreement-section">
     <div class="agreement-container">
 
       <div class="agreement-intro">
-        <h2>Healthy Staffords Staffordshire Bull Terrier Puppy Sales Agreement</h2>
-        <p>Please review the terms below and complete the form to sign our sales agreement. This contract is between <strong>Healthy Staffords</strong> (referred to as the Seller) and the Buyer identified below.</p>
+        <h2>Monarch Doodles Doodle Puppy Sales Agreement</h2>
+        <p>Please review the terms below and complete the form to sign our sales agreement. This contract is between <strong>Monarch Doodles</strong> (referred to as the Seller) and the Buyer identified below.</p>
       </div>
 
       <form class="agreement-form" id="agreementForm" action="https://submit-form.com/1arAhZzzK" method="POST">
@@ -29,7 +29,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
         <div class="form-card">
           <div class="form-header">
             <h2>Sign Contract</h2>
-            <p>Complete the form below to sign our Staffordshire Bull Terrier Puppy Sales Agreement</p>
+            <p>Complete the form below to sign our Doodle Puppy Sales Agreement</p>
           </div>
 
           <div class="form-fields">
@@ -173,7 +173,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
 
     formData.delete('agree_terms');
     const data = Object.fromEntries(formData.entries());
-    data._email = { subject: "Sales Agreement Signed - Healthy Staffords", from: "Healthy Staffords Sales Agreement" };
+    data._email = { subject: "Sales Agreement Signed - Monarch Doodles", from: "Monarch Doodles Sales Agreement" };
 
     const originalHTML = submitBtn.innerHTML;
     submitBtn.innerHTML = "Submitting...";
@@ -203,7 +203,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
 <style>
   .agreement-section {
     padding: 4rem 1.5rem;
-    background: #FBF5E9;
+    background: var(--color-cream);
   }
 
   .agreement-container {
@@ -219,7 +219,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   .agreement-intro h2 {
     font-size: 1.75rem;
     font-weight: 700;
-    color: #6B3F1D;
+    color: var(--color-primary);
     margin: 0 0 0.75rem;
   }
 
@@ -243,7 +243,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   .terms-card h3 {
     font-size: 1.15rem;
     font-weight: 700;
-    color: #6B3F1D;
+    color: var(--color-primary);
     margin: 0 0 1rem;
   }
 
@@ -260,7 +260,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
     line-height: 1.7;
     margin-bottom: 0.75rem;
     padding-left: 1rem;
-    border-left: 2px solid #E8DFCF;
+    border-left: 2px solid var(--color-gray-200);
   }
 
   .term-item strong {
@@ -281,13 +281,13 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
     text-align: center;
     margin-bottom: 2rem;
     padding-bottom: 1.5rem;
-    border-bottom: 1px solid #E8DFCF;
+    border-bottom: 1px solid var(--color-gray-200);
   }
 
   .form-header h2 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #6B3F1D;
+    color: var(--color-primary);
     margin: 0 0 0.5rem;
   }
 
@@ -343,7 +343,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   .form-group select:focus,
   .form-group textarea:focus {
     outline: none;
-    border-color: #6B3F1D;
+    border-color: var(--color-primary);
     background: white;
   }
 
@@ -367,12 +367,12 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   }
 
   .radio-option:hover {
-    background: #FBF5E9;
-    border-color: #C87348;
+    background: var(--color-cream);
+    border-color: var(--color-secondary);
   }
 
   .radio-option input[type="radio"] {
-    accent-color: #6B3F1D;
+    accent-color: var(--color-primary);
   }
 
   .puppy-checkbox-grid {
@@ -394,7 +394,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   }
 
   .puppy-checkbox:hover {
-    background: #FBF5E9;
+    background: var(--color-cream);
   }
 
   .puppy-checkbox input[type="checkbox"] {
@@ -415,8 +415,8 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
 
   .puppy-checkbox input[type="checkbox"]:checked + .checkbox-custom,
   .agree-checkbox input[type="checkbox"]:checked + .checkbox-custom {
-    background: #6B3F1D;
-    border-color: #6B3F1D;
+    background: var(--color-primary);
+    border-color: var(--color-primary);
   }
 
   .puppy-checkbox input[type="checkbox"]:checked + .checkbox-custom::after,
@@ -435,8 +435,8 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   }
 
   .agreement-check {
-    background: #FBF5E9;
-    border: 1px solid #C87348;
+    background: var(--color-cream);
+    border: 1px solid var(--color-secondary);
     border-radius: 10px;
     padding: 1.25rem;
   }
@@ -466,7 +466,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   .signature-card-title {
     font-size: 1.25rem;
     font-weight: 700;
-    color: #6B3F1D;
+    color: var(--color-primary);
     margin: 0 0 1.25rem;
   }
 
@@ -475,13 +475,13 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   }
 
   .signature-card .agreement-check a {
-    color: #C87348;
+    color: var(--color-secondary);
     text-decoration: underline;
     font-weight: 600;
   }
 
   .signature-card .agreement-check a:hover {
-    color: #6B3F1D;
+    color: var(--color-primary);
   }
 
   .signature-section {
@@ -498,7 +498,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   .signature-input-wrapper input {
     width: 100%;
     padding: 1.25rem 1rem;
-    border: 2px dashed #6B3F1D;
+    border: 2px dashed var(--color-primary);
     border-radius: 10px;
     font-size: 1.2rem;
     font-family: 'Georgia', serif;
@@ -517,7 +517,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
 
   .signature-input-wrapper input:focus {
     outline: none;
-    border-color: #C87348;
+    border-color: var(--color-secondary);
     background-color: #fff;
   }
 
@@ -543,7 +543,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    background: linear-gradient(135deg, #6B3F1D, #C87348);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
     color: white;
     padding: 1rem 2rem;
     border: none;
@@ -569,18 +569,18 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
     align-items: center;
     justify-content: center;
     padding: 1rem 2rem;
-    border: 2px solid #6B3F1D;
+    border: 2px solid var(--color-primary);
     border-radius: 50px;
     font-size: 1rem;
     font-weight: 600;
-    color: #6B3F1D;
+    color: var(--color-primary);
     background: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
   }
 
   .btn-download:hover {
-    background: #6B3F1D;
+    background: var(--color-primary);
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(107, 63, 29, 0.3);

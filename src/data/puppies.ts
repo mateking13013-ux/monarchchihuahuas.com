@@ -1,310 +1,165 @@
 export interface Puppy {
   name: string;
-  image: string;
+  images: string[];
   sex: 'Male' | 'Female';
   age: string;
   status: string;
   price: number;
   description: string;
   coat: string;
+  breed: string;
+  puppyId: string;
 }
 
 export const puppies: Puppy[] = [
   {
-    name: 'Alex',
-    image: '/images/alex.webp',
+    name: 'Atlas',
+    images: ['/images/atlas-1.jpg', '/images/atlas-2.jpg', '/images/atlas-3.jpg'],
     sex: 'Male',
-    age: '9 Weeks',
+    age: '8 Weeks',
     status: 'Available',
-    price: 800,
-    description: 'Alex is a confident and playful Staffordshire Bull Terrier puppy with a bold personality. He loves exploring his surroundings and is always ready for an adventure. His muscular build and bright eyes make him a real head-turner. Alex would thrive with an active family who enjoys outdoor fun.',
-    coat: 'Brindle with white chest patch'
+    price: 750,
+    description: "Atlas is a laid-back, gentle gentleman with a warm, people-loving personality. He adores quiet snuggles just as much as a casual game of fetch. Vet checked, fully vaccinated, and well underway with crate and potty training. Expected adult weight 50–60 lbs.",
+    coat: 'Cream and golden, soft wavy low-shedding coat',
+    breed: 'F1 Standard Goldendoodle',
+    puppyId: 'MD001'
   },
   {
-    name: 'Ashley',
-    image: '/images/ashley.webp',
-    sex: 'Female',
-    age: '9 Weeks',
+    name: 'Avalanche',
+    images: ['/images/avalanche-1.jpg', '/images/avalanche-2.jpg', '/images/avalanche-3.jpg'],
+    sex: 'Male',
+    age: '8 Weeks',
     status: 'Available',
-    price: 800,
-    description: 'Ashley is a sweet and affectionate Staffie girl who loves cuddles and belly rubs. She has a gentle temperament and gets along wonderfully with everyone she meets. Her beautiful coat and expressive eyes will melt your heart. Ashley is looking for a loving forever home.',
-    coat: 'Fawn with white markings'
+    price: 750,
+    description: "Avalanche is a stunning little gentleman with a soft, snowy cream coat and a calm, easy confidence. He's playful, cuddly, and already loves people of every age. His wavy, low-shedding, allergy-friendly coat makes him a beautiful fit for almost any home. Expected 12–19 lbs.",
+    coat: 'Snowy cream, wavy low-shedding coat',
+    breed: 'F1b Mini Goldendoodle',
+    puppyId: 'MD002'
+  },
+  {
+    name: 'Bear',
+    images: ['/images/bear-1.jpg', '/images/bear-2.jpg', '/images/bear-3.jpg'],
+    sex: 'Male',
+    age: '8 Weeks',
+    status: 'Available',
+    price: 750,
+    description: "Bear is an adorable little teddy bear, full of charm and playful energy. His soft curly low-shedding coat makes him impossibly huggable, and his sweet personality wins everyone over. Vet checked, vaccinated, and doing well with crate and potty training. Expected 13–19 lbs.",
+    coat: 'Golden curly, low-shedding',
+    breed: 'F1b Mini Goldendoodle',
+    puppyId: 'MD003'
+  },
+  {
+    name: 'Bumblebee',
+    images: ['/images/bumblebee-1.jpg', '/images/bumblebee-2.jpg', '/images/bumblebee-3.jpg'],
+    sex: 'Male',
+    age: '8 Weeks',
+    status: 'Available',
+    price: 750,
+    description: "Bumblebee buzzes with personality and charm — rich apricot curls, bright eyes, and a heart that loves chasing toys and cuddling on the sofa. His wavy, low-shedding coat is perfect for families with allergies. He's smart, social, and ready to fit right into your home. Expected 12–18 lbs.",
+    coat: 'Rich apricot curls, low-shedding',
+    breed: 'F1b Mini Goldendoodle',
+    puppyId: 'MD004'
+  },
+  {
+    name: 'Pansy',
+    images: ['/images/pansy-1.jpg', '/images/pansy-2.jpg', '/images/pansy-3.jpg'],
+    sex: 'Female',
+    age: '8 Weeks',
+    status: 'Available',
+    price: 750,
+    description: "Pansy is cheerful, affectionate, confident, and smart — a lovely little doodle with a sweet streak a mile wide. She loves exploring on her short little legs and curling up in your lap when the day is done. Soft, low-shedding wavy coat. Expected 12–18 lbs.",
+    coat: 'Cream wavy, low-shedding',
+    breed: 'F1b Mini Goldendoodle',
+    puppyId: 'MD005'
+  },
+  {
+    name: 'Nala',
+    images: ['/images/nala-1.jpg', '/images/nala-2.jpg', '/images/nala-3.jpg'],
+    sex: 'Female',
+    age: '8 Weeks',
+    status: 'Available',
+    price: 750,
+    description: "Nala is beautifully balanced — playful, affectionate, and right at home with people. She loves a tug toy and outdoor adventures, then turns straight into a snuggler the moment she comes inside. Her soft, low-shedding coat is allergy-friendly and easy to live with. Expected 35–60 lbs.",
+    coat: 'Cream and apricot, soft low-shedding',
+    breed: 'F1 Standard Goldendoodle',
+    puppyId: 'MD006'
+  },
+  {
+    name: 'Willow',
+    images: ['/images/willow-1.jpg', '/images/willow-2.jpg', '/images/willow-3.jpg'],
+    sex: 'Female',
+    age: '10 Weeks',
+    status: 'Available',
+    price: 750,
+    description: "Willow is a beautiful, affectionate girl with a calm, nurturing personality — she gravitates straight to children and the gentlest play. Her soft fluffy low-shedding coat is built for cuddles, and her steady temperament suits a family that wants a graceful, gentle companion. Expected 55–65 lbs.",
+    coat: 'Black and white, soft fluffy low-shedding coat',
+    breed: 'F1 Standard Sheepadoodle',
+    puppyId: 'MD007'
+  },
+  {
+    name: 'Luna',
+    images: ['/images/luna-1.jpg', '/images/luna-2.jpg', '/images/luna-3.jpg'],
+    sex: 'Female',
+    age: '8 Weeks',
+    status: 'Available',
+    price: 750,
+    description: "Luna is a sweet, graceful girl with a gentle spirit and a bright, intelligent mind. She loves a good game of fetch but is just as content snuggling beside you on the couch in the evening. Her soft, wavy, low-shedding coat is allergy-friendly. Expected 55–65 lbs.",
+    coat: 'Black and white, soft wavy low-shedding coat',
+    breed: 'F1 Standard Sheepadoodle',
+    puppyId: 'MD008'
+  },
+  {
+    name: 'Jasper',
+    images: ['/images/jasper-1.jpg', '/images/jasper-2.jpg', '/images/jasper-3.jpg'],
+    sex: 'Male',
+    age: '10 Weeks',
+    status: 'Available',
+    price: 750,
+    description: "Jasper is a bright, playful boy who thrives on interaction and outdoor fun — he's the kind of pup that turns a backyard into an adventure. He's curious, easy to train, and is already picking up basic routines quickly. Thick hypoallergenic-style coat. Expected 60–70 lbs.",
+    coat: 'Black and white, thick hypoallergenic-style coat',
+    breed: 'F1 Standard Sheepadoodle',
+    puppyId: 'MD009'
+  },
+  {
+    name: 'Rocky',
+    images: ['/images/rocky-1.jpg', '/images/rocky-2.jpg', '/images/rocky-3.jpg'],
+    sex: 'Male',
+    age: '8 Weeks',
+    status: 'Available',
+    price: 750,
+    description: "Rocky is a happy-go-lucky boy with a brave, curious spirit. He loves running, toys, and people of all kinds — and his fluffy low-shedding coat means he's just as comfortable on the rug as he is on a hike. He'll fit right into an active, loving home. Expected 28–35 lbs.",
+    coat: 'Black and white, fluffy low-shedding',
+    breed: 'F1 Mini Sheepadoodle',
+    puppyId: 'MD010'
+  },
+  {
+    name: 'Hazel',
+    images: ['/images/hazel-1.jpg', '/images/hazel-2.jpg', '/images/hazel-3.jpg'],
+    sex: 'Female',
+    age: '8 Weeks',
+    status: 'Available',
+    price: 750,
+    description: "Hazel is a bright, fun-loving girl with a lights-up-the-room personality. She's smart, curious, and adores human interaction — already responding to her name and learning early manners. Her soft fluffy low-shedding coat is wonderfully allergy-friendly. Expected 25–32 lbs.",
+    coat: 'Black and white, soft fluffy low-shedding',
+    breed: 'F1 Mini Sheepadoodle',
+    puppyId: 'MD011'
   },
   {
     name: 'Bella',
-    image: '/images/bella.webp',
-    sex: 'Female',
-    age: '11 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Bella is a strong and sturdy Staffie with a heart of gold. Despite her muscular build, she is incredibly gentle and loves nothing more than snuggling on the couch. She is well-socialized and confident in new situations. Bella is ready to become your loyal best friend.',
-    coat: 'Blue with white chest'
-  },
-  {
-    name: 'Belly',
-    image: '/images/belly.webp',
-    sex: 'Female',
-    age: '9 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Belly is an adorable and energetic Staffie puppy who keeps everyone entertained with her playful antics. She has a wonderful temperament and loves being the center of attention. Her compact, muscular frame and cheerful disposition make her irresistible. Belly is searching for her perfect family.',
-    coat: 'Red brindle with white blaze'
-  },
-  {
-    name: 'Boston',
-    image: '/images/boston.webp',
-    sex: 'Male',
-    age: '9 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Boston is a handsome and outgoing Staffordshire Bull Terrier with a charming personality. He is curious about everything and loves to play with toys. His strong build and friendly nature make him perfect for families. Boston can\'t wait to find his forever home.',
-    coat: 'Black brindle with white chest'
-  },
-  {
-    name: 'Carlos',
-    image: '/images/carlos.webp',
-    sex: 'Male',
-    age: '9 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Carlos is a bold and confident Staffie puppy with a love for adventure. He has excellent energy and loves to run and play. His striking appearance and loyal personality make him a wonderful companion. Carlos is ready to bring joy to his new family.',
-    coat: 'Brindle and white'
-  },
-  {
-    name: 'Chill',
-    image: '/images/chill.webp',
-    sex: 'Male',
-    age: '9 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Chill is a laid-back and easygoing Staffie who lives up to his name. He has a calm temperament but still enjoys a good play session. His gentle nature makes him great with children and other pets. Chill is looking for his forever home!',
-    coat: 'Blue fawn with white markings'
-  },
-  {
-    name: 'Connie',
-    image: '/images/connie.webp',
-    sex: 'Female',
-    age: '9 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Connie is a beautiful and sweet-natured Staffordshire Bull Terrier with a loving personality. She adores people and will greet you with a wagging tail every time. Her compact build and gorgeous coat make her a standout. Connie would make an excellent family companion.',
-    coat: 'Fawn brindle with white chest'
-  },
-  {
-    name: 'Cooper',
-    image: '/images/cooper.webp',
-    sex: 'Male',
-    age: '11 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Cooper is a strong and athletic Staffie puppy who loves to stay active. He is intelligent and picks up training quickly. His loyal and protective nature makes him an ideal family dog. Cooper is looking for an active household that will keep up with his energy.',
-    coat: 'Red with white blaze'
-  },
-  {
-    name: 'Coy',
-    image: '/images/coy.webp',
-    sex: 'Male',
-    age: '11 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Coy is a charming Staffordshire Bull Terrier with a playful spirit and a heart full of love. He enjoys interactive play and is always up for a game of fetch. His muscular frame and bright personality make him a joy to be around. Coy is eager to find his forever family.',
-    coat: 'Dark brindle with white chest patch'
-  },
-  {
-    name: 'Echo',
-    image: '/images/echo.webp',
-    sex: 'Male',
-    age: '8 Weeks',
-    status: 'Sold',
-    price: 800,
-    description: 'Echo is a spirited and curious Staffie puppy who loves discovering new things. He has a wonderful temperament and is naturally sociable. His compact build and expressive face give him tons of character. Echo is ready to fill your home with love and laughter.',
-    coat: 'Blue brindle with white markings'
-  },
-  {
-    name: 'Gracie',
-    image: '/images/gracie.webp',
+    images: ['/images/bella-1.jpg', '/images/bella-2.jpg', '/images/bella-3.jpg'],
     sex: 'Female',
     age: '8 Weeks',
     status: 'Available',
-    price: 800,
-    description: 'Gracie is a gentle and loving Staffie girl with the sweetest personality. She enjoys quiet moments just as much as playtime. Her beautiful coat and kind eyes make her absolutely adorable. Gracie is looking for a family who will cherish her gentle spirit.',
-    coat: 'Fawn with white chest and paws'
-  },
-  {
-    name: 'Kobe',
-    image: '/images/kobe.webp',
-    sex: 'Male',
-    age: '9 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Kobe is an energetic and athletic Staffordshire Bull Terrier with a competitive spirit. He loves to run, play, and show off his strength. His confident demeanor and striking looks make him a natural standout. Kobe is perfect for someone who loves an active lifestyle.',
-    coat: 'Red brindle'
-  },
-  {
-    name: 'Lucy',
-    image: '/images/lucy.webp',
-    sex: 'Female',
-    age: '9 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Lucy is a sweet and affectionate Staffie puppy who loves nothing more than being close to her people. She has a calm and gentle temperament that makes her great with kids. Her compact build and beautiful markings are truly eye-catching. Lucy is ready for her forever home.',
-    coat: 'White with brindle patches'
-  },
-  {
-    name: 'Mabel',
-    image: '/images/mabel.webp',
-    sex: 'Female',
-    age: '8 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Mabel is a delightful and playful Staffordshire Bull Terrier with a fun-loving personality. She brings joy to everyone she meets with her happy-go-lucky attitude. Her muscular little frame and adorable face make her irresistible. Mabel is searching for a family to call her own.',
-    coat: 'Brindle with white blaze and chest'
-  },
-  {
-    name: 'Mack',
-    image: '/images/mack.webp',
-    sex: 'Male',
-    age: '11 Weeks',
-    status: 'Sold',
-    price: 800,
-    description: 'Mack is a robust and handsome Staffie with a bold personality. He is confident, friendly, and loves to be the center of attention. His powerful build and striking coat make him a real head-turner. Mack would thrive in an active household with plenty of love to give.',
-    coat: 'Dark brindle with white chest'
-  },
-  {
-    name: 'Maggie',
-    image: '/images/maggie.webp',
-    sex: 'Female',
-    age: '8 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Maggie is an adorable Staffie puppy with a heart as big as her personality. She loves playing with toys and giving kisses to everyone. Her sweet nature and beautiful appearance make her the perfect family companion. Maggie cannot wait to meet her new family.',
-    coat: 'Fawn with white markings'
-  },
-  {
-    name: 'Mia',
-    image: '/images/mia.webp',
-    sex: 'Female',
-    age: '11 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Mia is a strong and confident Staffordshire Bull Terrier with an outgoing personality. She loves to explore and is always up for an adventure. Her well-built frame and friendly demeanor make her an ideal companion. Mia is ready to bring endless joy to her new home.',
-    coat: 'Blue with white chest and paws'
-  },
-  {
-    name: 'Nevile',
-    image: '/images/nevile.webp',
-    sex: 'Male',
-    age: '11 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Nevile is a distinguished and loyal Staffie puppy with a noble bearing. He has a calm confidence that sets him apart from the crowd. His muscular build and beautiful markings make him truly handsome. Nevile is looking for a family who will appreciate his gentle, devoted nature.',
-    coat: 'Red with white blaze'
-  },
-  {
-    name: 'Pip',
-    image: '/images/pip.webp',
-    sex: 'Female',
-    age: '11 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Pip is a petite and charming Staffie girl with a lively personality. She is full of energy and loves to play but also enjoys quiet cuddle time. Her compact frame and expressive eyes make her absolutely adorable. Pip is ready to fill your life with love and happiness.',
-    coat: 'Brindle and white'
-  },
-  {
-    name: 'Rex',
-    image: '/images/rex.webp',
-    sex: 'Male',
-    age: '9 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Rex is a powerful and athletic Staffordshire Bull Terrier with a commanding presence. He is brave, loyal, and incredibly affectionate with his family. His striking build and confident stride make him stand out wherever he goes. Rex is seeking an experienced owner who will give him the love he deserves.',
-    coat: 'Black brindle with white chest'
-  },
-  {
-    name: 'Roy',
-    image: '/images/roy.webp',
-    sex: 'Male',
-    age: '11 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Roy is a friendly and sociable Staffie puppy who gets along with everyone. He has a happy-go-lucky attitude that makes him a joy to be around. His well-proportioned build and glossy coat give him a distinguished appearance. Roy is looking for a loving family to share his life with.',
-    coat: 'Red brindle with white markings'
-  },
-  {
-    name: 'Royce',
-    image: '/images/royce.webp',
-    sex: 'Male',
-    age: '8 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Royce is a premium Staffie puppy with a luxurious appearance and loving personality. He carries himself with confidence and loves to show off his playful side. His well-built frame and beautiful coat make him truly special. Royce is ready to be your loyal companion for life.',
-    coat: 'Blue fawn with white chest'
-  },
-  {
-    name: 'Thor',
-    image: '/images/thor.webp',
-    sex: 'Male',
-    age: '11 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Thor is a mighty and brave Staffordshire Bull Terrier with a heart of gold. His powerful build and fearless spirit are matched only by his incredible sweetness. He loves rough-and-tumble play but is equally gentle with children. Thor is destined to be a beloved family protector.',
-    coat: 'Dark brindle'
-  },
-  {
-    name: 'Wild',
-    image: '/images/wild.webp',
-    sex: 'Male',
-    age: '11 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Wild is an adventurous and high-energy Staffie puppy who lives up to his name. He loves to run, play, and explore the great outdoors. Despite his energetic nature, he has a sweet and affectionate side. Wild is perfect for an active owner who enjoys outdoor activities.',
-    coat: 'Brindle with white blaze and chest'
-  },
-  {
-    name: 'Yava',
-    image: '/images/yava.webp',
-    sex: 'Female',
-    age: '9 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Yava is an elegant and graceful Staffie girl with a warm personality. She has a calm confidence and a loving nature that draws people to her. Her beautiful coat and gentle eyes make her truly captivating. Yava would make a wonderful addition to any family.',
-    coat: 'Fawn with white chest and paws'
-  },
-  {
-    name: 'Zeus',
-    image: '/images/zeus.webp',
-    sex: 'Male',
-    age: '9 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Zeus is a powerful and majestic Staffordshire Bull Terrier who commands attention wherever he goes. He has a strong, muscular build and a confident personality. Despite his imposing appearance, he is incredibly gentle and loving. Zeus is looking for a family worthy of his devotion.',
-    coat: 'Blue with white markings'
-  },
-  {
-    name: 'Ziggy',
-    image: '/images/ziggy.webp',
-    sex: 'Male',
-    age: '11 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Ziggy is a fun and quirky Staffie puppy with a unique personality. He is always making his family laugh with his playful antics. His well-built frame and cheerful expression make him impossible to resist. Ziggy is ready to bring endless entertainment to his new home.',
-    coat: 'Brindle with white chest patch'
-  },
-  {
-    name: 'Lime',
-    image: '/images/lime.webp',
-    sex: 'Male',
-    age: '9 Weeks',
-    status: 'Available',
-    price: 800,
-    description: 'Lime is a fresh and lively Staffordshire Bull Terrier with a zest for life. He brings energy and excitement to everything he does. His compact, muscular build and bright personality make him an absolute delight. Lime is eager to find a family who matches his enthusiasm for life.',
-    coat: 'Fawn brindle with white markings'
+    price: 750,
+    description: "Bella is a bright, affectionate, confident little lady — she loves attention and is already learning her basic commands. Her soft fluffy low-shedding coat makes her a wonderful fit for families with allergies, and her gentle spirit makes her a beautiful family companion. Expected 25–35 lbs.",
+    coat: 'Black and white, soft fluffy low-shedding',
+    breed: 'F1 Mini Sheepadoodle',
+    puppyId: 'MD012'
   }
 ];
 
-// Featured puppies for home page (first 5)
 export const featuredPuppies = puppies.slice(0, 5).map(p => ({
   name: p.name,
-  image: p.image,
+  image: p.images[0],
   price: p.price
 }));

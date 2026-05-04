@@ -37,7 +37,7 @@ const { question } = Astro.props;
     background: white;
     border-radius: 6px;
     overflow: hidden;
-    border: 1px solid #E8DFCF;
+    border: 1px solid var(--color-gray-200);
   }
 
   .faq-item.open {
@@ -60,12 +60,12 @@ const { question } = Astro.props;
   }
 
   .faq-header:hover {
-    background: #FBF5E9;
+    background: var(--color-cream);
   }
 
   .faq-item.open .faq-header {
-    background: #FBF5E9;
-    border-bottom: 1px solid #E8DFCF;
+    background: var(--color-cream);
+    border-bottom: 1px solid var(--color-gray-200);
   }
 
   .question {

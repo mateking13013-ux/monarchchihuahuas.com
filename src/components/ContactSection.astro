@@ -1,14 +1,15 @@
 ---
 // ContactSection component
-const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chill", "Connie", "Cooper", "Coy", "Echo", "Gracie", "Kobe", "Lucy", "Mabel", "Mack", "Maggie", "Mia", "Nevile", "Pip", "Rex", "Roy", "Royce", "Thor", "Wild", "Yava", "Zeus", "Ziggy", "Lime"];
+import { puppies } from '../data/puppies';
+const puppyNames = puppies.map(p => p.name);
 ---
 
 <section class="contact-section" id="contact">
   <div class="contact-container">
     <div class="section-header">
       <span class="section-badge">Get In Touch</span>
-      <h2 class="section-title">Ready to Welcome a <span>Staffie</span>?</h2>
-      <p class="section-subtitle">Have questions about our Staffordshire Bull Terrier puppies or ready to bring one home? We'd love to hear from you!</p>
+      <h2 class="section-title">Ready to Welcome a <span>Doodle</span>?</h2>
+      <p class="section-subtitle">Have questions about our Doodle puppies or ready to bring one home? We'd love to hear from you!</p>
     </div>
 
     <div class="contact-grid">
@@ -61,7 +62,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
 
           <div class="form-group">
             <label for="homeMessage">Message</label>
-            <textarea id="homeMessage" name="message" placeholder="Tell us about yourself and why you'd love a Staffie..."></textarea>
+            <textarea id="homeMessage" name="message" placeholder="Tell us about yourself and why you'd love a Doodle..."></textarea>
           </div>
 
           <button type="submit" class="btn-submit">
@@ -90,7 +91,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
           </div>
           <div class="info-content">
             <h4>Email Us</h4>
-            <p><a href="mailto:info@healthystaffords.com">info@healthystaffords.com</a></p>
+            <p><a href="mailto:info@monarchdoodles.com">info@monarchdoodles.com</a></p>
           </div>
         </div>
 
@@ -116,7 +117,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
 
         <div class="info-note">
           <h4>Our Location</h4>
-          <p>We operate as a family-based home breeder. For the safety and privacy of our family and Staffordshire Bull Terrier puppies, we do not publicly list our address. Once you contact us, we'll gladly share our location and arrange a convenient visit or delivery.</p>
+          <p>We operate as a family-based home breeder. For the safety and privacy of our family and Doodle puppies, we do not publicly list our address. Once you contact us, we'll gladly share our location and arrange a convenient visit or delivery.</p>
         </div>
 
         <div class="info-puppies-card">
@@ -141,7 +142,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
 
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
-    data._email = { subject: "New Puppy Inquiry - Healthy Staffords", from: "Healthy Staffords Website" };
+    data._email = { subject: "New Puppy Inquiry - Monarch Doodles", from: "Monarch Doodles Website" };
     const submitBtn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
 
     const originalHTML = submitBtn.innerHTML;
@@ -173,7 +174,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   .contact-section {
     display: block;
     font-family: var(--font-family, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif);
-    background: #FBF5E9;
+    background: var(--color-cream);
     padding: 4rem 1.5rem;
   }
 
@@ -189,7 +190,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
 
   .section-badge {
     display: inline-block;
-    background: #6B3F1D;
+    background: var(--color-primary);
     color: white;
     padding: 0.4rem 1rem;
     border-radius: 50px;
@@ -206,7 +207,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   }
 
   .section-title span {
-    color: #6B3F1D;
+    color: var(--color-primary);
   }
 
   .section-subtitle {
@@ -248,7 +249,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   .info-icon {
     width: 45px;
     height: 45px;
-    background: linear-gradient(135deg, #6B3F1D, #C87348);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -277,21 +278,21 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   }
 
   .info-content a {
-    color: #6B3F1D;
+    color: var(--color-primary);
     text-decoration: none;
     font-weight: 500;
   }
 
   .info-content a:hover {
-    color: #C87348;
+    color: var(--color-secondary);
   }
 
   .info-note {
-    background: #FBF5E9;
+    background: var(--color-cream);
     border-radius: 12px;
     padding: 1.25rem;
     margin-top: 1rem;
-    border-left: 3px solid #6B3F1D;
+    border-left: 3px solid var(--color-primary);
   }
 
   .info-note h4 {
@@ -310,7 +311,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
 
   .info-puppies-card {
     background: #fff;
-    border: 1px solid #E8DFCF;
+    border: 1px solid var(--color-gray-200);
     border-radius: 12px;
     padding: 1.25rem;
     margin-top: 1.25rem;
@@ -319,7 +320,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   .info-puppies-card h4 {
     font-size: 1rem;
     font-weight: 600;
-    color: #6B3F1D;
+    color: var(--color-primary);
     margin: 0 0 0.75rem;
   }
 
@@ -332,8 +333,8 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
 
   .info-puppy-tag {
     display: inline-block;
-    background: #FBF5E9;
-    color: #3A2415;
+    background: var(--color-cream);
+    color: var(--color-gray-900);
     padding: 0.25rem 0.6rem;
     border-radius: 50px;
     font-size: 0.75rem;
@@ -343,14 +344,14 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
 
   .info-puppies-link {
     display: inline-block;
-    color: #6B3F1D;
+    color: var(--color-primary);
     font-size: 0.85rem;
     font-weight: 600;
     text-decoration: none;
   }
 
   .info-puppies-link:hover {
-    color: #C87348;
+    color: var(--color-secondary);
   }
 
   .contact-form-wrapper {
@@ -407,7 +408,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   .form-group select:focus,
   .form-group textarea:focus {
     outline: none;
-    border-color: #6B3F1D;
+    border-color: var(--color-primary);
     background: white;
   }
 
@@ -441,7 +442,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   }
 
   .puppy-checkbox:hover {
-    background: #FBF5E9;
+    background: var(--color-cream);
   }
 
   .puppy-checkbox input[type="checkbox"] {
@@ -461,8 +462,8 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   }
 
   .puppy-checkbox input[type="checkbox"]:checked + .checkbox-custom {
-    background: #6B3F1D;
-    border-color: #6B3F1D;
+    background: var(--color-primary);
+    border-color: var(--color-primary);
   }
 
   .puppy-checkbox input[type="checkbox"]:checked + .checkbox-custom::after {
@@ -484,7 +485,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    background: #6B3F1D;
+    background: var(--color-primary);
     color: white;
     padding: 1rem 2rem;
     border: none;
@@ -497,7 +498,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
   }
 
   .btn-submit:hover {
-    background: #C87348;
+    background: var(--color-secondary);
     transform: translateY(-2px);
   }
 

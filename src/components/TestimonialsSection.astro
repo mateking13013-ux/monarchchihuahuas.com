@@ -2,36 +2,13 @@
 // TestimonialsSection component
 import { testimonials } from '../data/testimonials';
 
-const testimonialImages = [
-  '/images/testi-1.jpeg',
-  '/images/testi-2.jpeg',
-  '/images/testi-3.jpeg',
-  '/images/testi-4.jpeg',
-  '/images/testi-5.jpeg',
-  '/images/testi-6.jpeg',
-  '/images/testi-7.jpeg',
-  '/images/testi-8.jpeg',
-  '/images/testi-9.jpeg',
-  '/images/testi-10.jpeg',
-  '/images/testi-11.jpeg',
-  '/images/testi-12.jpeg',
-  '/images/testi-13.jpeg',
-  '/images/testi-14.jpeg',
-  '/images/testi-15.jpeg',
-  '/images/testi-16.jpeg',
-  '/images/testi-17.jpeg',
-  '/images/testi-18.jpeg',
-  '/images/testi-19.jpeg',
-  '/images/testi-20.jpeg',
-  '/images/testi-21.jpeg',
-  '/images/testi-22.jpeg',
-];
+const testimonialImages = Array.from({ length: 19 }, (_, i) => `/images/testi-${i + 1}.jpg`);
 ---
 
 <section class="testimonials-section" id="testimonials">
   <div class="testimonials-container">
     <div class="section-header">
-      <span class="section-badge">Happy Staffie Families</span>
+      <span class="section-badge">Happy Doodle Families</span>
       <h2 class="section-title">What Our Families Say</h2>
       <p class="section-subtitle">Real stories from families who found their perfect companion with us.</p>
     </div>
@@ -40,7 +17,7 @@ const testimonialImages = [
     <div class="image-gallery">
       {testimonialImages.map((img, index) => (
         <div class={`gallery-item gallery-item-${(index % 4) + 1}`}>
-          <img src={img} alt="Happy Staffie family" loading="lazy">
+          <img src={img} alt="Happy Doodle family" loading="lazy">
         </div>
       ))}
     </div>
@@ -205,7 +182,7 @@ const testimonialImages = [
     height: 55px;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid #6B3F1D;
+    border: 3px solid var(--color-primary);
     flex-shrink: 0;
   }
 
@@ -242,7 +219,7 @@ const testimonialImages = [
   .star {
     width: 16px;
     height: 16px;
-    fill: #D4A35A;
+    fill: var(--color-gold);
   }
 
   .testimonial-text {
@@ -257,18 +234,18 @@ const testimonialImages = [
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    background: #FBF5E9;
+    background: var(--color-cream);
     padding: 0.4rem 0.9rem;
     border-radius: 50px;
     font-size: 0.8rem;
-    color: #6B3F1D;
+    color: var(--color-primary);
     font-weight: 600;
   }
 
   .puppy-tag svg {
     width: 14px;
     height: 14px;
-    fill: #6B3F1D;
+    fill: var(--color-primary);
   }
 
   @media (max-width: 1100px) {

@@ -5,8 +5,8 @@ import FaqItem from '../components/FaqItem.astro';
 ---
 
 <BaseLayout
-  title="FAQs | Healthy Staffords"
-  description="Frequently asked questions about our puppies and our breeding practices at Healthy Staffords."
+  title="FAQs | Monarch Doodles"
+  description="Frequently asked questions about our puppies and our breeding practices at Monarch Doodles."
   keywords="puppy faq, puppy questions, breeder FAQ"
 >
   <PageHeader
@@ -18,24 +18,24 @@ import FaqItem from '../components/FaqItem.astro';
     <div class="content-container">
       <h2>General Questions</h2>
 
-      <FaqItem question="Are Staffordshire Bull Terriers a good breed?">
-        <p>Staffordshire Bull Terriers are affectionate and playful dogs that make wonderful companions. They are loyal, intelligent, and full of personality. With proper training and socialization, they make excellent family pets.</p>
+      <FaqItem question="Are Doodles a good breed?">
+        <p>Doodles are affectionate and playful dogs that make wonderful companions. They are loyal, intelligent, and full of personality. With proper training and socialization, they make excellent family pets.</p>
       </FaqItem>
 
-      <FaqItem question="Are Staffies good for beginners?">
-        <p>Yes! Staffordshire Bull Terriers are great dogs for first-time dog owners. They are affectionate, relatively easy to care for, and eager to please. Their sturdy build and adaptable nature make them manageable, and they adapt well to various living situations.</p>
+      <FaqItem question="Are Doodles good for beginners?">
+        <p>Yes! Doodles are great dogs for first-time dog owners. They are affectionate, relatively easy to care for, and eager to please. Their sturdy build and adaptable nature make them manageable, and they adapt well to various living situations.</p>
       </FaqItem>
 
-      <FaqItem question="Do Staffies make good family pets?">
-        <p>Absolutely! Not only are Staffies amazing companions, but they are also great family pets. They tend to get along well with other pets and are generally good with children, especially when properly socialized from a young age. They are often called the "nanny dog" due to their gentle nature with kids.</p>
+      <FaqItem question="Do Doodles make good family pets?">
+        <p>Absolutely! Not only are Doodles amazing companions, but they are also great family pets. They tend to get along well with other pets and are generally good with children, especially when properly socialized from a young age. They are often called the "nanny dog" due to their gentle nature with kids.</p>
       </FaqItem>
 
-      <FaqItem question="Do Staffies smell bad?">
-        <p>With proper grooming and care, your Staffie will not have a foul smell. Regular bathing, ear cleaning, and dental care are important. Consider taking your dog to a professional groomer periodically and always use quality dog shampoos.</p>
+      <FaqItem question="Do Doodles smell bad?">
+        <p>With proper grooming and care, your Doodle will not have a foul smell. Regular bathing, ear cleaning, and dental care are important. Consider taking your dog to a professional groomer periodically and always use quality dog shampoos.</p>
       </FaqItem>
 
-      <FaqItem question="What should I know about Staffie health?">
-        <p>Staffordshire Bull Terriers are generally a robust and healthy breed. However, they can be prone to certain conditions like hip dysplasia, L-2 HGA, and hereditary cataracts. Regular vet checkups, a healthy diet, and proper exercise will help keep your Staffie in great shape.</p>
+      <FaqItem question="What should I know about Doodle health?">
+        <p>Doodles are generally a robust and healthy breed. However, they can be prone to certain conditions like hip dysplasia, L-2 HGA, and hereditary cataracts. Regular vet checkups, a healthy diet, and proper exercise will help keep your Doodle in great shape.</p>
       </FaqItem>
 
       <h2>About Our Puppies</h2>
@@ -92,7 +92,7 @@ import FaqItem from '../components/FaqItem.astro';
   }
 
   .cta-box {
-    background: linear-gradient(135deg, #6B3F1D, #6B3F1D);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary));
     color: white;
     padding: 2rem;
     border-radius: 12px;
@@ -113,7 +113,7 @@ import FaqItem from '../components/FaqItem.astro';
 
   .btn {
     display: inline-block;
-    background: #6B3F1D;
+    background: var(--color-primary);
     color: white;
     padding: 0.875rem 2rem;
     border-radius: 8px;
@@ -124,7 +124,7 @@ import FaqItem from '../components/FaqItem.astro';
   }
 
   .btn:hover {
-    background: #C87348;
+    background: var(--color-secondary);
     transform: translateY(-2px);
   }
 

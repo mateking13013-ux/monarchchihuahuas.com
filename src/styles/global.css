@@ -1,7 +1,7 @@
 /* ================================
-   Healthy Staffords
+   Monarch Doodles
    Main Stylesheet
-   Warm & Homey Breeder Theme
+   Bright Orange Family Breeder Theme
 ================================ */
 
 /* Google Fonts — editorial serif + clean sans */
@@ -9,35 +9,35 @@
 
 /* CSS Custom Properties (Theme) */
 :root {
-  /* Primary Colors - Warm Chestnut */
-  --color-primary: #6B3F1D;
-  --color-primary-light: #8C5A34;
-  --color-primary-dark: #4A2B14;
+  /* Primary Colors - Bright Orange */
+  --color-primary: #FF6A1A;
+  --color-primary-light: #FF884D;
+  --color-primary-dark: #E04E00;
 
-  /* Secondary Colors - Terracotta */
-  --color-secondary: #C87348;
-  --color-secondary-light: #E09069;
-  --color-secondary-dark: #A35A33;
+  /* Secondary Colors - Tangerine */
+  --color-secondary: #FF8A2B;
+  --color-secondary-light: #FFB070;
+  --color-secondary-dark: #D9620A;
 
   /* Accent Colors */
-  --color-gold: #D4A35A;
-  --color-sage: #8C9779;
-  --color-cream: #FBF5E9;
-  --color-cream-dark: #F2E6CE;
+  --color-gold: #FFB347;
+  --color-sage: #FFD3A1;
+  --color-cream: #FFF5EC;
+  --color-cream-dark: #FFE3CB;
 
   /* Neutrals */
   --color-white: #FFFFFF;
-  --color-off-white: #FDFBF6;
-  --color-gray-100: #F4EEE3;
-  --color-gray-200: #E8DFCF;
-  --color-gray-300: #D6C9B4;
-  --color-gray-400: #B8A88D;
-  --color-gray-500: #8E7E64;
-  --color-gray-600: #6D604B;
-  --color-gray-700: #524736;
-  --color-gray-800: #3A3126;
-  --color-gray-900: #2B2018;
-  --color-black: #1F1712;
+  --color-off-white: #FFFBF6;
+  --color-gray-100: #FFF1E2;
+  --color-gray-200: #F8DDC3;
+  --color-gray-300: #ECC59F;
+  --color-gray-400: #C99A6E;
+  --color-gray-500: #9C7351;
+  --color-gray-600: #6E513A;
+  --color-gray-700: #4F3A29;
+  --color-gray-800: #36281C;
+  --color-gray-900: #241A12;
+  --color-black: #15100B;
 
   /* Typography */
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -60,11 +60,11 @@
   --radius-xl: 22px;
   --radius-full: 999px;
 
-  /* Shadows (warm) */
-  --shadow-sm: 0 1px 3px rgba(74, 43, 20, 0.08);
-  --shadow-md: 0 4px 12px rgba(74, 43, 20, 0.1);
-  --shadow-lg: 0 14px 32px rgba(74, 43, 20, 0.14);
-  --shadow-xl: 0 24px 50px rgba(74, 43, 20, 0.18);
+  /* Shadows (warm orange) */
+  --shadow-sm: 0 1px 3px rgba(255, 106, 26, 0.10);
+  --shadow-md: 0 4px 12px rgba(255, 106, 26, 0.14);
+  --shadow-lg: 0 14px 32px rgba(255, 106, 26, 0.20);
+  --shadow-xl: 0 24px 50px rgba(255, 106, 26, 0.26);
 
   /* Transitions */
   --transition-fast: 0.15s ease;
@@ -177,13 +177,13 @@ img {
 .btn-primary {
   background: var(--color-primary);
   color: var(--color-white);
-  box-shadow: 0 6px 16px rgba(107, 63, 29, 0.25);
+  box-shadow: 0 6px 16px rgba(255, 106, 26, 0.28);
 }
 
 .btn-primary:hover {
   background: var(--color-primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(107, 63, 29, 0.35);
+  box-shadow: 0 10px 24px rgba(255, 106, 26, 0.40);
   color: var(--color-white);
 }
 
@@ -242,7 +242,7 @@ section {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-gray-400);
+  background: var(--color-secondary-light);
   border-radius: 5px;
 }
 

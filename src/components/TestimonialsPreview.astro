@@ -2,30 +2,7 @@
 // TestimonialsPreview component
 import { testimonialPreviews } from '../data/testimonials';
 
-const testimonialImages = [
-  '/images/testi-1.jpeg',
-  '/images/testi-2.jpeg',
-  '/images/testi-3.jpeg',
-  '/images/testi-4.jpeg',
-  '/images/testi-5.jpeg',
-  '/images/testi-6.jpeg',
-  '/images/testi-7.jpeg',
-  '/images/testi-8.jpeg',
-  '/images/testi-9.jpeg',
-  '/images/testi-10.jpeg',
-  '/images/testi-11.jpeg',
-  '/images/testi-12.jpeg',
-  '/images/testi-13.jpeg',
-  '/images/testi-14.jpeg',
-  '/images/testi-15.jpeg',
-  '/images/testi-16.jpeg',
-  '/images/testi-17.jpeg',
-  '/images/testi-18.jpeg',
-  '/images/testi-19.jpeg',
-  '/images/testi-20.jpeg',
-  '/images/testi-21.jpeg',
-  '/images/testi-22.jpeg',
-];
+const testimonialImages = Array.from({ length: 19 }, (_, i) => `/images/testi-${i + 1}.jpg`);
 
 ---
 
@@ -43,7 +20,7 @@ const testimonialImages = [
       {testimonialPreviews.map((t, index) => (
         <div class="testimonial-card">
           <div class="card-image">
-            <img src={testimonialImages[index % testimonialImages.length]} alt={`${t.name}'s Staffie`} loading="lazy">
+            <img src={testimonialImages[index % testimonialImages.length]} alt={`${t.name}'s Doodle`} loading="lazy">
           </div>
           <div class="card-content">
             <div class="card-header">
@@ -74,7 +51,7 @@ const testimonialImages = [
 
             <div class="card-footer">
               <img src="/images/image copy.png" alt="Google" class="google-icon">
-              <span class="business-name">Healthy Staffords</span>
+              <span class="business-name">Monarch Doodles</span>
             </div>
           </div>
         </div>

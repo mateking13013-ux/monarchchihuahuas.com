@@ -5,7 +5,7 @@ import InfoBox from '../components/InfoBox.astro';
 ---
 
 <BaseLayout
-  title="Vaccinations | Healthy Staffords"
+  title="Vaccinations | Monarch Doodles"
   description="Learn about our vaccination schedule and protocols for our puppies."
   keywords="puppy vaccinations, puppy shots, puppy immunization"
 >
@@ -105,7 +105,7 @@ import InfoBox from '../components/InfoBox.astro';
   h3 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #6B3F1D;
+    color: var(--color-primary);
     margin: 2rem 0 1rem;
   }
 
@@ -129,7 +129,7 @@ import InfoBox from '../components/InfoBox.astro';
   .vaccine-table {
     width: 100%;
     border-collapse: collapse;
-    background: #FBF5E9;
+    background: var(--color-cream);
     border-radius: 8px;
     overflow: hidden;
     margin: 1.5rem 0;
@@ -139,11 +139,11 @@ import InfoBox from '../components/InfoBox.astro';
   .vaccine-table td {
     padding: 1rem;
     text-align: left;
-    border-bottom: 1px solid #E8DFCF;
+    border-bottom: 1px solid var(--color-gray-200);
   }
 
   .vaccine-table th {
-    background: #6B3F1D;
+    background: var(--color-primary);
     color: white;
     font-weight: 600;
   }
@@ -153,7 +153,7 @@ import InfoBox from '../components/InfoBox.astro';
   }
 
   .cta-box {
-    background: linear-gradient(135deg, #6B3F1D, #6B3F1D);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary));
     color: white;
     padding: 2rem;
     border-radius: 12px;
@@ -173,7 +173,7 @@ import InfoBox from '../components/InfoBox.astro';
 
   .btn {
     display: inline-block;
-    background: #6B3F1D;
+    background: var(--color-primary);
     color: white;
     padding: 0.875rem 2rem;
     border-radius: 8px;
@@ -184,7 +184,7 @@ import InfoBox from '../components/InfoBox.astro';
   }
 
   .btn:hover {
-    background: #C87348;
+    background: var(--color-secondary);
   }
 
   @media (max-width: 768px) {

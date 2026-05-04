@@ -4,29 +4,29 @@ import PageHeader from '../components/PageHeader.astro';
 ---
 
 <BaseLayout
-  title="Our Book | Healthy Staffords"
-  description="Download The Happy Staffordshire Bull Terrier - a complete guide to raising a healthy, happy Staffie, written from years of breeding experience."
-  keywords="Staffordshire Bull Terrier book, Staffie guide, Staffie care book, Healthy Staffords book"
+  title="Our Book | Monarch Doodles"
+  description="Download The Happy Doodle - a complete guide to raising a healthy, happy Doodle, written from years of breeding experience."
+  keywords="Doodle book, Doodle guide, Doodle care book, Monarch Doodles book"
 >
   <PageHeader
     title="Our Book"
-    subtitle="Everything you need to know about raising a happy, healthy Staffie"
+    subtitle="Everything you need to know about raising a happy, healthy Doodle"
   />
 
   <section class="book-section">
     <div class="book-container">
       <div class="book-layout">
         <div class="book-cover">
-          <img src="/images/pdfbookcover.jpeg" alt="The Happy Staffordshire Bull Terrier - Book Cover" />
+          <img src="/images/banner-1.jpg" alt="The Happy Doodle - Book Cover" />
         </div>
 
         <div class="book-details">
-          <h2>The Happy Staffordshire Bull Terrier</h2>
-          <p class="book-tagline">Your Complete Guide to Raising a Thriving Staffie</p>
+          <h2>The Happy Doodle</h2>
+          <p class="book-tagline">Your Complete Guide to Raising a Thriving Doodle</p>
 
-          <p>With years of experience breeding and raising Staffordshire Bull Terriers, we've put together this comprehensive guide to help you give your Staffie the best life possible.</p>
+          <p>With years of experience breeding and raising Doodles, we've put together this comprehensive guide to help you give your Doodle the best life possible.</p>
 
-          <p>Whether you're a first-time Staffie owner or an experienced dog lover, this book covers everything from nutrition and exercise to training, socialization, and health care — all tailored specifically for the Staffordshire Bull Terrier breed.</p>
+          <p>Whether you're a first-time Doodle owner or an experienced dog lover, this book covers everything from nutrition and exercise to training, socialization, and health care — all tailored specifically for the Doodle breed.</p>
 
           <div class="book-highlights">
             <div class="highlight">
@@ -51,11 +51,11 @@ import PageHeader from '../components/PageHeader.astro';
             </div>
             <div class="highlight">
               <span class="highlight-icon">&#10003;</span>
-              Understanding Staffie behavior
+              Understanding Doodle behavior
             </div>
           </div>
 
-          <a href="/books/the-happy-staffordshire-bull-terrier.pdf" download class="btn-download">
+          <a href="/books/the-happy-doodle.pdf" download class="btn-download">
             <svg viewBox="0 0 24 24" class="download-icon"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
             Download Free PDF
           </a>
@@ -63,7 +63,7 @@ import PageHeader from '../components/PageHeader.astro';
       </div>
 
       <div class="cta-box">
-        <h3>Have Questions About Your Staffie?</h3>
+        <h3>Have Questions About Your Doodle?</h3>
         <p>Our team is always here to help. Reach out to us for personalized advice about your puppy.</p>
         <a href="/contact" class="btn-contact">Contact Us</a>
       </div>
@@ -105,13 +105,13 @@ import PageHeader from '../components/PageHeader.astro';
   .book-details h2 {
     font-size: 2rem;
     font-weight: 700;
-    color: #6B3F1D;
+    color: var(--color-primary);
     margin: 0 0 0.5rem;
   }
 
   .book-tagline {
     font-size: 1.1rem;
-    color: #C87348;
+    color: var(--color-secondary);
     font-weight: 600;
     margin: 0 0 1.5rem;
   }
@@ -139,7 +139,7 @@ import PageHeader from '../components/PageHeader.astro';
   }
 
   .highlight-icon {
-    color: #C87348;
+    color: var(--color-secondary);
     font-weight: 700;
     font-size: 1.1rem;
   }
@@ -148,7 +148,7 @@ import PageHeader from '../components/PageHeader.astro';
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: linear-gradient(135deg, #6B3F1D, #C87348);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
     color: white;
     padding: 1rem 2rem;
     border-radius: 50px;
@@ -172,17 +172,17 @@ import PageHeader from '../components/PageHeader.astro';
   }
 
   .cta-box {
-    background: #FBF5E9;
+    background: var(--color-cream);
     padding: 2.5rem;
     border-radius: 16px;
     text-align: center;
-    border: 1px solid #E8DFCF;
+    border: 1px solid var(--color-gray-200);
   }
 
   .cta-box h3 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #6B3F1D;
+    color: var(--color-primary);
     margin: 0 0 0.75rem;
   }
 
@@ -195,7 +195,7 @@ import PageHeader from '../components/PageHeader.astro';
 
   .btn-contact {
     display: inline-block;
-    background: #C87348;
+    background: var(--color-secondary);
     color: white;
     padding: 0.875rem 2rem;
     border-radius: 8px;
@@ -206,7 +206,7 @@ import PageHeader from '../components/PageHeader.astro';
   }
 
   .btn-contact:hover {
-    background: #D4A35A;
+    background: var(--color-gold);
     transform: translateY(-2px);
   }
 
