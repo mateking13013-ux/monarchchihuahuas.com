@@ -1,7 +1,7 @@
 export interface Puppy {
   name: string;
   images: string[];
-  sex: 'Male' | 'Female';
+  sex: 'Male' | 'Female' | 'Males';
   age: string;
   status: string;
   price: number;
@@ -9,152 +9,122 @@ export interface Puppy {
   coat: string;
   breed: string;
   puppyId: string;
+  registration: string;
+  healthStatus: string;
 }
 
 export const puppies: Puppy[] = [
   {
     name: 'Atlas',
-    images: ['/images/atlas-1.jpg', '/images/atlas-2.jpg', '/images/atlas-3.jpg'],
+    images: ['/images/atlas-1.jpg', '/images/atlas-1.jpg', '/images/atlas-1.jpg'],
     sex: 'Male',
-    age: '8 Weeks',
+    age: '5 weeks',
     status: 'Available',
-    price: 750,
-    description: "Atlas is a laid-back, gentle gentleman with a warm, people-loving personality. He adores quiet snuggles just as much as a casual game of fetch. Vet checked, fully vaccinated, and well underway with crate and potty training. Expected adult weight 50–60 lbs.",
-    coat: 'Cream and golden, soft wavy low-shedding coat',
-    breed: 'F1 Standard Goldendoodle',
-    puppyId: 'MD001'
+    price: 500,
+    description: "Massive and majestic — this fawn male Boerboel pup carries the blocky head, wide chest, and calm, steady temperament of true African Mastiff royalty. Health-tested champion parents, vaccinated and dewormed on schedule, and already showing the gentle giant temperament Boerboel families love.",
+    coat: 'Fawn — classic Boerboel coat',
+    breed: 'BoerBoel',
+    puppyId: 'EB001',
+    registration: 'AKC & SABBS',
+    healthStatus: 'DNA and Health checked'
   },
   {
-    name: 'Avalanche',
-    images: ['/images/avalanche-1.jpg', '/images/avalanche-2.jpg', '/images/avalanche-3.jpg'],
+    name: 'Brutus',
+    images: ['/images/brutus-1.jpg', '/images/brutus-1.jpg', '/images/brutus-1.jpg'],
     sex: 'Male',
-    age: '8 Weeks',
+    age: '10 weeks',
     status: 'Available',
-    price: 750,
-    description: "Avalanche is a stunning little gentleman with a soft, snowy cream coat and a calm, easy confidence. He's playful, cuddly, and already loves people of every age. His wavy, low-shedding, allergy-friendly coat makes him a beautiful fit for almost any home. Expected 12–19 lbs.",
-    coat: 'Snowy cream, wavy low-shedding coat',
-    breed: 'F1b Mini Goldendoodle',
-    puppyId: 'MD002'
+    price: 850,
+    description: "Powerful build, confident nature, and deeply loyal from the very first introduction. Brutus comes from proven champion bloodlines and arrives fully vaccinated and dewormed — a forever guardian in the making, ready to bond with the family that becomes his world.",
+    coat: 'Fawn with dark mask',
+    breed: 'BoerBoel',
+    puppyId: 'EB002',
+    registration: 'AKC & SABBS',
+    healthStatus: 'DNA and Health checked'
   },
   {
-    name: 'Bear',
-    images: ['/images/bear-1.jpg', '/images/bear-2.jpg', '/images/bear-3.jpg'],
+    name: 'Valkyrie',
+    images: ['/images/valkyrie-1.jpg', '/images/valkyrie-1.jpg', '/images/valkyrie-1.jpg'],
+    sex: 'Female',
+    age: '10 weeks',
+    status: 'Available',
+    price: 850,
+    description: "A bold and confident pup with a playful personality and an enormous heart. Valkyrie has been raised inside a family environment with thorough socialization — a perfect fit for an active home that wants a confident, devoted Boerboel companion.",
+    coat: 'Fawn — Boerboel standard',
+    breed: 'BoerBoel',
+    puppyId: 'EB003',
+    registration: 'AKC & SABBS',
+    healthStatus: 'DNA and Health checked'
+  },
+  {
+    name: 'Magnum',
+    images: ['/images/magnum-1.jpg', '/images/magnum-1.jpg', '/images/magnum-1.jpg'],
     sex: 'Male',
-    age: '8 Weeks',
+    age: '10 weeks',
     status: 'Available',
-    price: 750,
-    description: "Bear is an adorable little teddy bear, full of charm and playful energy. His soft curly low-shedding coat makes him impossibly huggable, and his sweet personality wins everyone over. Vet checked, vaccinated, and doing well with crate and potty training. Expected 13–19 lbs.",
-    coat: 'Golden curly, low-shedding',
-    breed: 'F1b Mini Goldendoodle',
-    puppyId: 'MD003'
+    price: 850,
+    description: "A curious, energetic pup absolutely bursting with personality and charm. Magnum loves an adventure with his siblings just as much as he loves a quiet evening of cuddles, making him a versatile match for an active, loving home.",
+    coat: 'Fawn with mask',
+    breed: 'BoerBoel',
+    puppyId: 'EB004',
+    registration: 'AKC & SABBS',
+    healthStatus: 'DNA and Health checked'
   },
   {
-    name: 'Bumblebee',
-    images: ['/images/bumblebee-1.jpg', '/images/bumblebee-2.jpg', '/images/bumblebee-3.jpg'],
-    sex: 'Male',
-    age: '8 Weeks',
-    status: 'Available',
-    price: 750,
-    description: "Bumblebee buzzes with personality and charm — rich apricot curls, bright eyes, and a heart that loves chasing toys and cuddling on the sofa. His wavy, low-shedding coat is perfect for families with allergies. He's smart, social, and ready to fit right into your home. Expected 12–18 lbs.",
-    coat: 'Rich apricot curls, low-shedding',
-    breed: 'F1b Mini Goldendoodle',
-    puppyId: 'MD004'
-  },
-  {
-    name: 'Pansy',
-    images: ['/images/pansy-1.jpg', '/images/pansy-2.jpg', '/images/pansy-3.jpg'],
+    name: 'Martha',
+    images: ['/images/martha-1.jpg', '/images/martha-1.jpg', '/images/martha-1.jpg'],
     sex: 'Female',
-    age: '8 Weeks',
+    age: '10 weeks',
     status: 'Available',
-    price: 750,
-    description: "Pansy is cheerful, affectionate, confident, and smart — a lovely little doodle with a sweet streak a mile wide. She loves exploring on her short little legs and curling up in your lap when the day is done. Soft, low-shedding wavy coat. Expected 12–18 lbs.",
-    coat: 'Cream wavy, low-shedding',
-    breed: 'F1b Mini Goldendoodle',
-    puppyId: 'MD005'
+    price: 850,
+    description: "A gentle giant with a fearless yet loving nature. Martha is action-loving when there's an adventure to chase but turns straight into a calm, devoted cuddle-companion when the day winds down. Well-socialized and family-raised since day one.",
+    coat: 'Fawn — soft Boerboel coat',
+    breed: 'BoerBoel',
+    puppyId: 'EB005',
+    registration: 'AKC & SABBS',
+    healthStatus: 'DNA and Health checked'
   },
   {
-    name: 'Nala',
-    images: ['/images/nala-1.jpg', '/images/nala-2.jpg', '/images/nala-3.jpg'],
+    name: 'Bruiser & Duma',
+    images: ['/images/bruiser-duma-1.jpg', '/images/bruiser-duma-1.jpg', '/images/bruiser-duma-1.jpg'],
+    sex: 'Males',
+    age: '10 weeks',
+    status: 'Available',
+    price: 1600,
+    description: "A bonded brother pair available together for a single forever home — confident, big-hearted boys who balance adventure with affection perfectly. Raised side-by-side, they'll thrive in a family that wants two devoted Boerboel guardians at once.",
+    coat: 'Fawn — paired litter mates',
+    breed: 'BoerBoel',
+    puppyId: 'EB006',
+    registration: 'AKC & SABBS',
+    healthStatus: 'DNA and Health checked'
+  },
+  {
+    name: 'Tasha',
+    images: ['/images/tasha-1.jpg', '/images/tasha-1.jpg', '/images/tasha-1.jpg'],
     sex: 'Female',
-    age: '8 Weeks',
+    age: '10 weeks',
     status: 'Available',
-    price: 750,
-    description: "Nala is beautifully balanced — playful, affectionate, and right at home with people. She loves a tug toy and outdoor adventures, then turns straight into a snuggler the moment she comes inside. Her soft, low-shedding coat is allergy-friendly and easy to live with. Expected 35–60 lbs.",
-    coat: 'Cream and apricot, soft low-shedding',
-    breed: 'F1 Standard Goldendoodle',
-    puppyId: 'MD006'
+    price: 850,
+    description: "A spirited, bold pup with endless energy and a warm, loving soul. Tasha loves being outdoors, exploring with her people, and curling up close once the adventure is done. Family-raised and beautifully socialized.",
+    coat: 'Fawn — Boerboel standard',
+    breed: 'BoerBoel',
+    puppyId: 'EB007',
+    registration: 'AKC & SABBS',
+    healthStatus: 'DNA and Health checked'
   },
   {
-    name: 'Willow',
-    images: ['/images/willow-1.jpg', '/images/willow-2.jpg', '/images/willow-3.jpg'],
+    name: 'Sheba',
+    images: ['/images/sheba-1.jpg', '/images/sheba-1.jpg', '/images/sheba-1.jpg'],
     sex: 'Female',
-    age: '10 Weeks',
-    status: 'Available',
-    price: 750,
-    description: "Willow is a beautiful, affectionate girl with a calm, nurturing personality — she gravitates straight to children and the gentlest play. Her soft fluffy low-shedding coat is built for cuddles, and her steady temperament suits a family that wants a graceful, gentle companion. Expected 55–65 lbs.",
-    coat: 'Black and white, soft fluffy low-shedding coat',
-    breed: 'F1 Standard Sheepadoodle',
-    puppyId: 'MD007'
-  },
-  {
-    name: 'Luna',
-    images: ['/images/luna-1.jpg', '/images/luna-2.jpg', '/images/luna-3.jpg'],
-    sex: 'Female',
-    age: '8 Weeks',
-    status: 'Available',
-    price: 750,
-    description: "Luna is a sweet, graceful girl with a gentle spirit and a bright, intelligent mind. She loves a good game of fetch but is just as content snuggling beside you on the couch in the evening. Her soft, wavy, low-shedding coat is allergy-friendly. Expected 55–65 lbs.",
-    coat: 'Black and white, soft wavy low-shedding coat',
-    breed: 'F1 Standard Sheepadoodle',
-    puppyId: 'MD008'
-  },
-  {
-    name: 'Jasper',
-    images: ['/images/jasper-1.jpg', '/images/jasper-2.jpg', '/images/jasper-3.jpg'],
-    sex: 'Male',
-    age: '10 Weeks',
-    status: 'Available',
-    price: 750,
-    description: "Jasper is a bright, playful boy who thrives on interaction and outdoor fun — he's the kind of pup that turns a backyard into an adventure. He's curious, easy to train, and is already picking up basic routines quickly. Thick hypoallergenic-style coat. Expected 60–70 lbs.",
-    coat: 'Black and white, thick hypoallergenic-style coat',
-    breed: 'F1 Standard Sheepadoodle',
-    puppyId: 'MD009'
-  },
-  {
-    name: 'Rocky',
-    images: ['/images/rocky-1.jpg', '/images/rocky-2.jpg', '/images/rocky-3.jpg'],
-    sex: 'Male',
-    age: '8 Weeks',
-    status: 'Available',
-    price: 750,
-    description: "Rocky is a happy-go-lucky boy with a brave, curious spirit. He loves running, toys, and people of all kinds — and his fluffy low-shedding coat means he's just as comfortable on the rug as he is on a hike. He'll fit right into an active, loving home. Expected 28–35 lbs.",
-    coat: 'Black and white, fluffy low-shedding',
-    breed: 'F1 Mini Sheepadoodle',
-    puppyId: 'MD010'
-  },
-  {
-    name: 'Hazel',
-    images: ['/images/hazel-1.jpg', '/images/hazel-2.jpg', '/images/hazel-3.jpg'],
-    sex: 'Female',
-    age: '8 Weeks',
-    status: 'Available',
-    price: 750,
-    description: "Hazel is a bright, fun-loving girl with a lights-up-the-room personality. She's smart, curious, and adores human interaction — already responding to her name and learning early manners. Her soft fluffy low-shedding coat is wonderfully allergy-friendly. Expected 25–32 lbs.",
-    coat: 'Black and white, soft fluffy low-shedding',
-    breed: 'F1 Mini Sheepadoodle',
-    puppyId: 'MD011'
-  },
-  {
-    name: 'Bella',
-    images: ['/images/bella-1.jpg', '/images/bella-2.jpg', '/images/bella-3.jpg'],
-    sex: 'Female',
-    age: '8 Weeks',
-    status: 'Available',
-    price: 750,
-    description: "Bella is a bright, affectionate, confident little lady — she loves attention and is already learning her basic commands. Her soft fluffy low-shedding coat makes her a wonderful fit for families with allergies, and her gentle spirit makes her a beautiful family companion. Expected 25–35 lbs.",
-    coat: 'Black and white, soft fluffy low-shedding',
-    breed: 'F1 Mini Sheepadoodle',
-    puppyId: 'MD012'
+    age: '10 weeks',
+    status: 'Sold',
+    price: 850,
+    description: "A charismatic, fearless pup with a naturally affectionate and warm personality. Sheba loves a good wrestle with her siblings, was raised in the middle of family life, and brings the steady Boerboel confidence wherever she goes.",
+    coat: 'Fawn with mask',
+    breed: 'BoerBoel',
+    puppyId: 'EB008',
+    registration: 'AKC & SABBS',
+    healthStatus: 'DNA and Health checked'
   }
 ];
 

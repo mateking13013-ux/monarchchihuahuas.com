@@ -6,21 +6,21 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
 ---
 
 <BaseLayout
-  title="Sales Agreement | Monarch Doodles"
-  description="Review and sign our Doodle puppy sales agreement. Monarch Doodles — premium Doodle breeder."
-  keywords="puppy sales agreement, Doodle purchase contract, breeder contract, monarch doodles"
+  title="Sales Agreement | Elite BoerBoel"
+  description="Review and sign our BoerBoel puppy sales agreement. Elite BoerBoel — premium BoerBoel breeder."
+  keywords="puppy sales agreement, BoerBoel purchase contract, breeder contract, Elite BoerBoel"
 >
   <PageHeader
     title="Sales Agreement"
-    subtitle="Doodle Puppy Sales Agreement — Monarch Doodles"
+    subtitle="BoerBoel Puppy Sales Agreement — Elite BoerBoel"
   />
 
   <section class="agreement-section">
     <div class="agreement-container">
 
       <div class="agreement-intro">
-        <h2>Monarch Doodles Doodle Puppy Sales Agreement</h2>
-        <p>Please review the terms below and complete the form to sign our sales agreement. This contract is between <strong>Monarch Doodles</strong> (referred to as the Seller) and the Buyer identified below.</p>
+        <h2>Elite BoerBoel Puppy Sales Agreement</h2>
+        <p>Please review the terms below and complete the form to sign our sales agreement. This contract is between <strong>Elite BoerBoel</strong> (referred to as the Seller) and the Buyer identified below.</p>
       </div>
 
       <form class="agreement-form" id="agreementForm" action="https://submit-form.com/1arAhZzzK" method="POST">
@@ -29,7 +29,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
         <div class="form-card">
           <div class="form-header">
             <h2>Sign Contract</h2>
-            <p>Complete the form below to sign our Doodle Puppy Sales Agreement</p>
+            <p>Complete the form below to sign our BoerBoel Puppy Sales Agreement</p>
           </div>
 
           <div class="form-fields">
@@ -173,7 +173,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
 
     formData.delete('agree_terms');
     const data = Object.fromEntries(formData.entries());
-    data._email = { subject: "Sales Agreement Signed - Monarch Doodles", from: "Monarch Doodles Sales Agreement" };
+    data._email = { subject: "Sales Agreement Signed - Elite BoerBoel", from: "Elite BoerBoel Sales Agreement" };
 
     const originalHTML = submitBtn.innerHTML;
     submitBtn.innerHTML = "Submitting...";
@@ -237,7 +237,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
     padding: 2rem;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
     margin-bottom: 1.25rem;
-    border: 1px solid rgba(107, 63, 29, 0.08);
+    border: 1px solid rgba(92, 51, 23, 0.08);
   }
 
   .terms-card h3 {
@@ -274,7 +274,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
     padding: 2.5rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     margin-top: 2.5rem;
-    border: 2px solid rgba(107, 63, 29, 0.12);
+    border: 2px solid rgba(92, 51, 23, 0.12);
   }
 
   .form-header {
@@ -556,7 +556,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
 
   .btn-submit:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(107, 63, 29, 0.3);
+    box-shadow: 0 4px 15px rgba(92, 51, 23, 0.3);
   }
 
   .btn-submit:disabled {
@@ -583,7 +583,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
     background: var(--color-primary);
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(107, 63, 29, 0.3);
+    box-shadow: 0 4px 15px rgba(92, 51, 23, 0.3);
   }
 
   @media (max-width: 600px) {

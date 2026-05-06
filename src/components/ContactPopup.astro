@@ -96,11 +96,11 @@
 
     if (puppyName) {
       puppyNameSpan.textContent = puppyName;
-      formSubject.value = `Take Home Request: ${puppyName} - Monarch Doodles`;
+      formSubject.value = `Take Home Request: ${puppyName} - Elite BoerBoel`;
       formPuppyName.value = puppyName;
     } else {
       puppyNameSpan.textContent = 'Our Puppies';
-      formSubject.value = 'New Puppy Inquiry - Monarch Doodles';
+      formSubject.value = 'New Puppy Inquiry - Elite BoerBoel';
       formPuppyName.value = 'General Inquiry';
     }
 
@@ -171,7 +171,7 @@
     try {
       const formData = new FormData(form);
       const data = Object.fromEntries(formData.entries());
-      data._email = { subject: data.form_subject || "Puppy Inquiry - Monarch Doodles", from: "Monarch Doodles Website" };
+      data._email = { subject: data.form_subject || "Puppy Inquiry - Elite BoerBoel", from: "Elite BoerBoel Website" };
       delete data.form_subject;
       const response = await fetch('https://submit-form.com/1arAhZzzK', {
         method: 'POST',

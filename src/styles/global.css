@@ -1,7 +1,7 @@
 /* ================================
-   Monarch Doodles
+   Elite BoerBoel
    Main Stylesheet
-   Bright Orange Family Breeder Theme
+   Premium Saddle Bronze & Espresso Theme
 ================================ */
 
 /* Google Fonts — editorial serif + clean sans */
@@ -9,35 +9,35 @@
 
 /* CSS Custom Properties (Theme) */
 :root {
-  /* Primary Colors - Bright Orange */
-  --color-primary: #FF6A1A;
-  --color-primary-light: #FF884D;
-  --color-primary-dark: #E04E00;
+  /* Primary Colors - Rich Saddle Bronze */
+  --color-primary: #B8763E;
+  --color-primary-light: #D49961;
+  --color-primary-dark: #8B5424;
 
-  /* Secondary Colors - Tangerine */
-  --color-secondary: #FF8A2B;
-  --color-secondary-light: #FFB070;
-  --color-secondary-dark: #D9620A;
+  /* Secondary Colors - Deep Espresso */
+  --color-secondary: #5C3317;
+  --color-secondary-light: #8B5A2B;
+  --color-secondary-dark: #3E2010;
 
   /* Accent Colors */
-  --color-gold: #FFB347;
-  --color-sage: #FFD3A1;
-  --color-cream: #FFF5EC;
-  --color-cream-dark: #FFE3CB;
+  --color-gold: #D4A055;
+  --color-sage: #E8D4B0;
+  --color-cream: #F8F1E5;
+  --color-cream-dark: #EFE3CD;
 
   /* Neutrals */
   --color-white: #FFFFFF;
-  --color-off-white: #FFFBF6;
-  --color-gray-100: #FFF1E2;
-  --color-gray-200: #F8DDC3;
-  --color-gray-300: #ECC59F;
-  --color-gray-400: #C99A6E;
-  --color-gray-500: #9C7351;
-  --color-gray-600: #6E513A;
-  --color-gray-700: #4F3A29;
-  --color-gray-800: #36281C;
-  --color-gray-900: #241A12;
-  --color-black: #15100B;
+  --color-off-white: #FAF7F0;
+  --color-gray-100: #F2EBDD;
+  --color-gray-200: #E5D9C2;
+  --color-gray-300: #C9B58E;
+  --color-gray-400: #A38556;
+  --color-gray-500: #7A5E3A;
+  --color-gray-600: #574028;
+  --color-gray-700: #3E2D1B;
+  --color-gray-800: #2A1E12;
+  --color-gray-900: #1C140B;
+  --color-black: #0E0907;
 
   /* Typography */
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -60,11 +60,11 @@
   --radius-xl: 22px;
   --radius-full: 999px;
 
-  /* Shadows (warm orange) */
-  --shadow-sm: 0 1px 3px rgba(255, 106, 26, 0.10);
-  --shadow-md: 0 4px 12px rgba(255, 106, 26, 0.14);
-  --shadow-lg: 0 14px 32px rgba(255, 106, 26, 0.20);
-  --shadow-xl: 0 24px 50px rgba(255, 106, 26, 0.26);
+  /* Shadows (warm bronze) */
+  --shadow-sm: 0 1px 3px rgba(92, 51, 23, 0.10);
+  --shadow-md: 0 4px 12px rgba(92, 51, 23, 0.14);
+  --shadow-lg: 0 14px 32px rgba(92, 51, 23, 0.20);
+  --shadow-xl: 0 24px 50px rgba(92, 51, 23, 0.26);
 
   /* Transitions */
   --transition-fast: 0.15s ease;
@@ -177,13 +177,13 @@ img {
 .btn-primary {
   background: var(--color-primary);
   color: var(--color-white);
-  box-shadow: 0 6px 16px rgba(255, 106, 26, 0.28);
+  box-shadow: 0 6px 16px rgba(184, 118, 62, 0.28);
 }
 
 .btn-primary:hover {
   background: var(--color-primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(255, 106, 26, 0.40);
+  box-shadow: 0 10px 24px rgba(184, 118, 62, 0.40);
   color: var(--color-white);
 }
 

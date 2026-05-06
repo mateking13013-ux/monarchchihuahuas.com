@@ -62,7 +62,7 @@ import { puppies } from '../data/puppies';
                   </svg>
                 </div>
                 <span class="stat-value">{puppy.sex}</span>
-                <span class="stat-label">Sex</span>
+                <span class="stat-label">Gender</span>
               </div>
               <div class="stat-item">
                 <div class="stat-icon">
@@ -92,8 +92,8 @@ import { puppies } from '../data/puppies';
                     <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
                   </svg>
                 </div>
-                <span class="stat-value">{puppy.coat}</span>
-                <span class="stat-label">Coat</span>
+                <span class="stat-value">{puppy.registration}</span>
+                <span class="stat-label">Registration</span>
               </div>
             </div>
 
@@ -103,8 +103,8 @@ import { puppies } from '../data/puppies';
                 <span class="info-value">{puppy.puppyId}</span>
               </div>
               <div class="info-item">
-                <span class="info-label">Registration:</span>
-                <span class="info-value">Yes, AKC</span>
+                <span class="info-label">Health Status:</span>
+                <span class="info-value">{puppy.healthStatus}</span>
               </div>
             </div>
 
@@ -113,18 +113,18 @@ import { puppies } from '../data/puppies';
             <div class="comes-with-card">
               <p class="comes-with-title">Every Puppy Comes With:</p>
               <ul class="comes-with-list">
-                <li>Lifetime health guarantee</li>
-                <li>Potty and crate trained</li>
-                <li>Up to date vaccinations</li>
-                <li>Up to date de-worming</li>
-                <li>Starter Kit</li>
+                <li>DNA and Health checked</li>
+                <li>Microchipped</li>
+                <li>Birth certificate</li>
+                <li>Vet records &amp; vaccinations</li>
+                <li>1 Year health guarantee</li>
               </ul>
             </div>
 
             <div class="buttons-row">
               <a href="/contact" class="btn btn-primary">Contact Us</a>
-              <button type="button" class="btn btn-outline btn-popup" onclick={`openContactPopup('${puppy.name}', '${primaryImage}', '${puppy.sex} • ${puppy.age} • ${puppy.coat}')`}>Take Me Home</button>
-              <a href={`sms:+13853436640?&body=Hello%20I%20am%20interested%20in%20this%20${encodeURIComponent(puppy.breed)}%20Puppy%20${puppy.name}%0Awebsite:%20https://monarchdoodles.com/available-puppies`} class="btn btn-outline btn-sms">Send Text</a>
+              <button type="button" class="btn btn-outline btn-popup" onclick={`openContactPopup('${puppy.name}', '${primaryImage}', '${puppy.sex} • ${puppy.age} • ${puppy.registration}')`}>Buy {puppy.name}</button>
+              <a href={`sms:+16614923268?&body=Hello%20I%20am%20interested%20in%20this%20${encodeURIComponent(puppy.breed)}%20Puppy%20${puppy.name}`} class="btn btn-outline btn-sms">Send Text</a>
             </div>
           </div>
         </div>
@@ -151,7 +151,7 @@ import { puppies } from '../data/puppies';
     background: #fff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(255, 106, 26, 0.10);
+    box-shadow: 0 4px 20px rgba(184, 118, 62, 0.10);
     margin-bottom: 30px;
   }
 
@@ -235,12 +235,12 @@ import { puppies } from '../data/puppies';
 
   .gallery-thumb:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(255, 106, 26, 0.30);
+    box-shadow: 0 6px 16px rgba(184, 118, 62, 0.30);
   }
 
   .gallery-thumb.is-active {
     border-color: var(--color-primary);
-    box-shadow: 0 6px 16px rgba(255, 106, 26, 0.40);
+    box-shadow: 0 6px 16px rgba(184, 118, 62, 0.40);
   }
 
   .puppy-details {
