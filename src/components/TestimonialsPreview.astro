@@ -1,58 +1,47 @@
 ---
-// TestimonialsPreview component
+// TestimonialsPreview — text-only review cards (no images)
 import { testimonialPreviews } from '../data/testimonials';
-
-const testimonialImages = Array.from({ length: 19 }, (_, i) => `/images/testi-${i + 1}.jpg`);
-
 ---
 
 <section class="testimonials-section">
   <div class="section-container">
     <div class="section-header">
-      <div class="google-reviews-badge">
-        <img src="/images/image.png" alt="Google Reviews 5 Stars">
-      </div>
+      <span class="section-badge">Five-Star Reviews</span>
       <h2 class="section-title">What Our Families Say</h2>
-      <p class="section-subtitle">Read reviews from happy puppy owners</p>
+      <p class="section-subtitle">Real stories from happy Shih Tzu families across the country.</p>
     </div>
 
     <div class="testimonials-masonry">
-      {testimonialPreviews.map((t, index) => (
+      {testimonialPreviews.map((t) => (
         <div class="testimonial-card">
-          <div class="card-image">
-            <img src={testimonialImages[index % testimonialImages.length]} alt={`${t.name}'s BoerBoel`} loading="lazy">
+          <div class="card-header">
+            <div class="avatar">
+              {t.initials}
+              <span class="verified-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              </span>
+            </div>
+            <div class="reviewer-info">
+              <h4>{t.name}</h4>
+              <p class="reviewer-label">Verified Family</p>
+            </div>
           </div>
-          <div class="card-content">
-            <div class="card-header">
-              <div class="avatar">
-                {t.initials}
-                <span class="verified-badge">
-                  <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                </span>
-              </div>
-              <div class="reviewer-info">
-                <h4>{t.name}</h4>
-                <p class="reviewer-label">Reviewer</p>
-              </div>
+
+          <div class="rating-row">
+            <div class="stars">
+              {Array(5).fill(null).map(() => (
+                <svg class="star" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              ))}
             </div>
+            <span class="rating-text">{t.rating}/5</span>
+          </div>
 
-            <div class="rating-row">
-              <div class="stars">
-                {Array(5).fill(null).map(() => (
-                  <svg class="star" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                ))}
-              </div>
-              <span class="rating-text">{t.rating}/5</span>
-            </div>
+          <p class="review-text">{t.text}</p>
 
-            <p class="review-text">{t.text}</p>
+          <p class="review-meta">{t.timeAgo} &middot; {t.location}</p>
 
-            <p class="review-meta">{t.timeAgo} - {t.location}</p>
-
-            <div class="card-footer">
-              <img src="/images/image copy.png" alt="Google" class="google-icon">
-              <span class="business-name">Elite BoerBoel</span>
-            </div>
+          <div class="card-footer">
+            <span class="business-name">Crown Palace Shih Tzu</span>
           </div>
         </div>
       ))}
@@ -63,13 +52,13 @@ const testimonialImages = Array.from({ length: 19 }, (_, i) => `/images/testi-${
 <style>
   .testimonials-section {
     display: block;
-    font-family: var(--font-family, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif);
-    background: #f8f9fa;
-    padding: 4rem 1.5rem;
+    font-family: var(--font-family);
+    background: var(--color-cream);
+    padding: 4.5rem 1.5rem;
   }
 
   .section-container {
-    max-width: 1400px;
+    max-width: 1280px;
     margin: 0 auto;
   }
 
@@ -78,30 +67,32 @@ const testimonialImages = Array.from({ length: 19 }, (_, i) => `/images/testi-${
     margin-bottom: 3rem;
   }
 
-  .google-reviews-badge {
+  .section-badge {
     display: inline-block;
-    margin-bottom: 1.5rem;
-  }
-
-  .google-reviews-badge img {
-    height: 80px;
-    width: auto;
+    font-family: var(--font-display);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--color-secondary-dark);
+    margin-bottom: 0.9rem;
   }
 
   .section-title {
-    font-size: 2.25rem;
-    font-weight: 700;
-    color: #2B2018;
-    margin: 0 0 0.5rem;
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 3.4vw, 2.75rem);
+    font-weight: 600;
+    color: var(--color-gray-900);
+    margin: 0 0 0.6rem;
   }
 
   .section-subtitle {
     font-size: 1rem;
-    color: #666;
-    margin: 0;
+    color: var(--color-gray-600);
+    margin: 0 auto;
+    max-width: 560px;
   }
 
-  /* Masonry Grid for Testimonials */
   .testimonials-masonry {
     columns: 3;
     column-gap: 1.5rem;
@@ -109,53 +100,36 @@ const testimonialImages = Array.from({ length: 19 }, (_, i) => `/images/testi-${
 
   .testimonial-card {
     break-inside: avoid;
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-    border: 1px solid #e8e8e8;
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: 14px;
+    padding: 1.6rem 1.5rem;
     margin-bottom: 1.5rem;
-  }
-
-  .card-image {
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .card-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease;
-  }
-
-  .testimonial-card:hover .card-image img {
-    transform: scale(1.05);
-  }
-
-  .card-content {
-    padding: 1.5rem;
+    box-shadow: 0 4px 14px rgba(74, 27, 102, 0.06);
   }
 
   .card-header {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.9rem;
     margin-bottom: 1rem;
   }
 
   .avatar {
     position: relative;
-    width: 50px;
-    height: 50px;
-    background: #e0e0e0;
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: var(--color-white);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #555;
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
   }
 
   .verified-badge {
@@ -164,7 +138,7 @@ const testimonialImages = Array.from({ length: 19 }, (_, i) => `/images/testi-${
     right: -2px;
     width: 18px;
     height: 18px;
-    background: #00a67d;
+    background: var(--color-secondary);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -180,22 +154,26 @@ const testimonialImages = Array.from({ length: 19 }, (_, i) => `/images/testi-${
 
   .reviewer-info h4 {
     margin: 0;
-    font-size: 1rem;
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
     font-weight: 600;
-    color: #2B2018;
+    color: var(--color-gray-900);
   }
 
   .reviewer-label {
-    font-size: 0.85rem;
-    color: #00a67d;
-    margin: 0;
+    font-size: 0.78rem;
+    color: var(--color-secondary-dark);
+    margin: 2px 0 0;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 600;
   }
 
   .rating-row {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
+    gap: 0.6rem;
+    margin-bottom: 0.85rem;
   }
 
   .stars {
@@ -204,51 +182,42 @@ const testimonialImages = Array.from({ length: 19 }, (_, i) => `/images/testi-${
   }
 
   .star {
-    width: 24px;
-    height: 24px;
-    fill: #ffc107;
+    width: 18px;
+    height: 18px;
+    fill: var(--color-gold);
   }
 
   .rating-text {
-    font-size: 1.1rem;
-    color: #666;
+    font-size: 0.92rem;
+    color: var(--color-gray-600);
     font-weight: 500;
   }
 
   .review-text {
-    background: #f8f9fa;
-    border-left: 4px solid #00a67d;
-    padding: 1rem;
-    margin: 0 0 1rem;
     font-size: 0.95rem;
-    line-height: 1.6;
-    color: #333;
+    line-height: 1.7;
+    color: var(--color-gray-800);
+    margin: 0 0 1rem;
   }
 
   .review-meta {
-    font-size: 0.85rem;
-    color: #888;
-    margin-bottom: 1rem;
+    font-size: 0.82rem;
+    color: var(--color-gray-500);
+    margin: 0 0 0.85rem;
   }
 
   .card-footer {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding-top: 1rem;
-    border-top: 1px solid #eee;
-  }
-
-  .google-icon {
-    width: 30px;
-    height: 30px;
+    padding-top: 0.85rem;
+    border-top: 1px solid var(--color-gray-200);
   }
 
   .business-name {
-    font-size: 0.95rem;
+    font-family: var(--font-display);
+    font-size: 0.82rem;
     font-weight: 600;
-    color: #1a73e8;
-    text-decoration: underline;
+    color: var(--color-primary);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
   }
 
   @media (max-width: 1024px) {
@@ -268,12 +237,8 @@ const testimonialImages = Array.from({ length: 19 }, (_, i) => `/images/testi-${
 
     .testimonials-masonry {
       columns: 1;
-      max-width: 500px;
+      max-width: 560px;
       margin: 0 auto;
-    }
-
-    .google-reviews-badge img {
-      height: 60px;
     }
   }
 </style>

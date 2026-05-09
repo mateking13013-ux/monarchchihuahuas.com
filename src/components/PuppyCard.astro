@@ -22,18 +22,6 @@ import { puppies } from '../data/puppies';
                 />
               ))}
             </div>
-            <div class="gallery-thumbs">
-              {galleryImages.map((img, idx) => (
-                <button
-                  type="button"
-                  class={`gallery-thumb ${idx === 0 ? 'is-active' : ''}`}
-                  data-thumb-index={idx}
-                  aria-label={`Show photo ${idx + 1} of ${puppy.name}`}
-                >
-                  <img src={img} alt="" loading="lazy" />
-                </button>
-              ))}
-            </div>
           </div>
 
           <div class="puppy-details">
@@ -124,7 +112,7 @@ import { puppies } from '../data/puppies';
             <div class="buttons-row">
               <a href="/contact" class="btn btn-primary">Contact Us</a>
               <button type="button" class="btn btn-outline btn-popup" onclick={`openContactPopup('${puppy.name}', '${primaryImage}', '${puppy.sex} • ${puppy.age} • ${puppy.registration}')`}>Buy {puppy.name}</button>
-              <a href={`sms:+16614923268?&body=Hello%20I%20am%20interested%20in%20this%20${encodeURIComponent(puppy.breed)}%20Puppy%20${puppy.name}`} class="btn btn-outline btn-sms">Send Text</a>
+              <a href={`sms:+16194835589?&body=Hello%20I%20am%20interested%20in%20this%20${encodeURIComponent(puppy.breed)}%20Puppy%20${puppy.name}`} class="btn btn-outline btn-sms">Send Text</a>
             </div>
           </div>
         </div>

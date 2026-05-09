@@ -5,24 +5,24 @@ export interface Faq {
 
 export const faqs: Faq[] = [
   {
-    question: 'Is a BoerBoel a good breed?',
-    answer: 'BoerBoels are loyal, affectionate, and courageous dogs known for being excellent family companions. They are often called "nanny dogs" for their natural love of children.'
+    question: 'Is a Shih Tzu a good breed?',
+    answer: 'Shih Tzus are loyal, affectionate, and courageous dogs known for being excellent family companions. They are often called "nanny dogs" for their natural love of children.'
   },
   {
-    question: 'Is a BoerBoel good for beginners?',
-    answer: 'Yes, BoerBoels can be great for first-time dog owners. They are eager to please, intelligent, and respond well to positive reinforcement training. Their loving and loyal nature makes them wonderful companions.'
+    question: 'Is a Shih Tzu good for beginners?',
+    answer: 'Yes, Shih Tzus can be great for first-time dog owners. They are eager to please, intelligent, and respond well to positive reinforcement training. Their loving and loyal nature makes them wonderful companions.'
   },
   {
-    question: 'Do BoerBoels make good family pets?',
-    answer: 'Absolutely! BoerBoels are known for being fantastic family pets. They are gentle with children, loyal to their families, and form strong bonds with all household members.'
+    question: 'Do Shih Tzus make good family pets?',
+    answer: 'Absolutely! Shih Tzus are known for being fantastic family pets. They are gentle with children, loyal to their families, and form strong bonds with all household members.'
   },
   {
-    question: 'How much exercise does a BoerBoel need?',
-    answer: 'BoerBoels are active and energetic dogs that need at least 1 hour of exercise daily. This can include walks, playtime, and mental stimulation. They love interactive games like fetch and tug-of-war.'
+    question: 'How much exercise does a Shih Tzu need?',
+    answer: 'Shih Tzus are active and energetic dogs that need at least 1 hour of exercise daily. This can include walks, playtime, and mental stimulation. They love interactive games like fetch and tug-of-war.'
   },
   {
-    question: 'Are BoerBoels easy to train?',
-    answer: 'BoerBoels are intelligent and eager to please, making them responsive to training. They do best with consistent, positive reinforcement methods. Early socialization and puppy training classes are highly recommended.'
+    question: 'Are Shih Tzus easy to train?',
+    answer: 'Shih Tzus are intelligent and eager to please, making them responsive to training. They do best with consistent, positive reinforcement methods. Early socialization and puppy training classes are highly recommended.'
   }
 ];
 
@@ -53,5 +53,5 @@ export const expenseNotes: ExpenseNote[] = [
   { label: 'Veterinary Care', text: 'This includes routine check-ups, vaccinations, and preventative care.' },
   { label: 'Pet Insurance', text: 'Costs can vary based on coverage and provider.' },
   { label: 'Training Classes', text: 'Group classes may be less expensive than private sessions.' },
-  { label: 'Grooming', text: 'BoerBoels have short coats that are easy to maintain with regular brushing.' }
+  { label: 'Grooming', text: 'Shih Tzus have short coats that are easy to maintain with regular brushing.' }
 ];

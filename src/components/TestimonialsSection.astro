@@ -8,7 +8,7 @@ const testimonialImages = Array.from({ length: 19 }, (_, i) => `/images/testi-${
 <section class="testimonials-section" id="testimonials">
   <div class="testimonials-container">
     <div class="section-header">
-      <span class="section-badge">Happy BoerBoel Families</span>
+      <span class="section-badge">Happy Shih Tzu Families</span>
       <h2 class="section-title">What Our Families Say</h2>
       <p class="section-subtitle">Real stories from families who found their perfect companion with us.</p>
     </div>
@@ -17,7 +17,7 @@ const testimonialImages = Array.from({ length: 19 }, (_, i) => `/images/testi-${
     <div class="image-gallery">
       {testimonialImages.map((img, index) => (
         <div class={`gallery-item gallery-item-${(index % 4) + 1}`}>
-          <img src={img} alt="Happy BoerBoel family" loading="lazy">
+          <img src={img} alt="Happy Shih Tzu family" loading="lazy">
         </div>
       ))}
     </div>

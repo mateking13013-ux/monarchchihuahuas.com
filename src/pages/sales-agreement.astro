@@ -6,21 +6,21 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
 ---
 
 <BaseLayout
-  title="Sales Agreement | Elite BoerBoel"
-  description="Review and sign our BoerBoel puppy sales agreement. Elite BoerBoel — premium BoerBoel breeder."
-  keywords="puppy sales agreement, BoerBoel purchase contract, breeder contract, Elite BoerBoel"
+  title="Sales Agreement | Crown Palace Shih Tzu"
+  description="Review and sign our Shih Tzu puppy sales agreement. Crown Palace Shih Tzu — premium Shih Tzu breeder."
+  keywords="puppy sales agreement, Shih Tzu purchase contract, breeder contract, Crown Palace Shih Tzu"
 >
   <PageHeader
     title="Sales Agreement"
-    subtitle="BoerBoel Puppy Sales Agreement — Elite BoerBoel"
+    subtitle="Shih Tzu Puppy Sales Agreement — Crown Palace Shih Tzu"
   />
 
   <section class="agreement-section">
     <div class="agreement-container">
 
       <div class="agreement-intro">
-        <h2>Elite BoerBoel Puppy Sales Agreement</h2>
-        <p>Please review the terms below and complete the form to sign our sales agreement. This contract is between <strong>Elite BoerBoel</strong> (referred to as the Seller) and the Buyer identified below.</p>
+        <h2>Crown Palace Shih Tzu Puppy Sales Agreement</h2>
+        <p>Please review the terms below and complete the form to sign our sales agreement. This contract is between <strong>Crown Palace Shih Tzu</strong> (referred to as the Seller) and the Buyer identified below.</p>
       </div>
 
       <form class="agreement-form" id="agreementForm" action="https://submit-form.com/1arAhZzzK" method="POST">
@@ -29,7 +29,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
         <div class="form-card">
           <div class="form-header">
             <h2>Sign Contract</h2>
-            <p>Complete the form below to sign our BoerBoel Puppy Sales Agreement</p>
+            <p>Complete the form below to sign our Shih Tzu Puppy Sales Agreement</p>
           </div>
 
           <div class="form-fields">
@@ -173,7 +173,7 @@ const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chi
 
     formData.delete('agree_terms');
     const data = Object.fromEntries(formData.entries());
-    data._email = { subject: "Sales Agreement Signed - Elite BoerBoel", from: "Elite BoerBoel Sales Agreement" };
+    data._email = { subject: "Sales Agreement Signed - Crown Palace Shih Tzu", from: "Crown Palace Shih Tzu Sales Agreement" };
 
     const originalHTML = submitBtn.innerHTML;
     submitBtn.innerHTML = "Submitting...";
