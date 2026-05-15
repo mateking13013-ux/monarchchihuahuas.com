@@ -1,7 +1,7 @@
 ---
 // ContactSection component
 import { puppies } from '../data/puppies';
-const puppyNames = puppies.map(p => p.name);
+const puppyNames = puppies.filter(p => p.status === 'Available').map(p => p.name);
 ---
 
 <section class="contact-section" id="contact">

@@ -1,8 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHeader from '../components/PageHeader.astro';
+import { puppies } from '../data/puppies';
 
-const puppyNames = ["Alex", "Ashley", "Bella", "Belly", "Boston", "Carlos", "Chill", "Connie", "Cooper", "Coy", "Echo", "Gracie", "Kobe", "Lucy", "Mabel", "Mack", "Maggie", "Mia", "Nevile", "Pip", "Rex", "Roy", "Royce", "Thor", "Wild", "Yava", "Zeus", "Ziggy", "Lime"];
+const puppyNames = puppies.filter(p => p.status === 'Available').map(p => p.name);
 ---
 
 <BaseLayout
