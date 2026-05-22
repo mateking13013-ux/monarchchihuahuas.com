@@ -15,7 +15,7 @@
         <h3 id="popup-puppy-title">Puppy Name</h3>
         <p id="popup-puppy-details">Details</p>
         <div class="puppy-price-row">
-          <span class="puppy-price">$750</span>
+          <span class="puppy-price">$1200</span>
           <span class="puppy-includes">Includes paperwork & starter kit</span>
         </div>
         <div class="puppy-guarantee">
@@ -96,11 +96,11 @@
 
     if (puppyName) {
       puppyNameSpan.textContent = puppyName;
-      formSubject.value = `Take Home Request: ${puppyName} - Crown Palace Shih Tzu`;
+      formSubject.value = `Take Home Request: ${puppyName} - Monarch Chihuahuas`;
       formPuppyName.value = puppyName;
     } else {
       puppyNameSpan.textContent = 'Our Puppies';
-      formSubject.value = 'New Puppy Inquiry - Crown Palace Shih Tzu';
+      formSubject.value = 'New Puppy Inquiry - Monarch Chihuahuas';
       formPuppyName.value = 'General Inquiry';
     }
 
@@ -171,7 +171,7 @@
     try {
       const formData = new FormData(form);
       const data = Object.fromEntries(formData.entries());
-      data._email = { subject: data.form_subject || "Puppy Inquiry - Crown Palace Shih Tzu", from: "Crown Palace Shih Tzu Website" };
+      data._email = { subject: data.form_subject || "Puppy Inquiry - Monarch Chihuahuas", from: "Monarch Chihuahuas Website" };
       delete data.form_subject;
       const response = await fetch('https://submit-form.com/uCymQReox', {
         method: 'POST',

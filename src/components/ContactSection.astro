@@ -8,8 +8,8 @@ const puppyNames = puppies.filter(p => p.status === 'Available').map(p => p.name
   <div class="contact-container">
     <div class="section-header">
       <span class="section-badge">Get In Touch</span>
-      <h2 class="section-title">Ready to Welcome a <span>Shih Tzu</span>?</h2>
-      <p class="section-subtitle">Have questions about our Shih Tzu puppies or ready to bring one home? We'd love to hear from you!</p>
+      <h2 class="section-title">Ready to Welcome a <span>Chihuahua</span>?</h2>
+      <p class="section-subtitle">Have questions about our Chihuahua puppies or ready to bring one home? We'd love to hear from you!</p>
     </div>
 
     <div class="contact-grid">
@@ -62,7 +62,7 @@ const puppyNames = puppies.filter(p => p.status === 'Available').map(p => p.name
 
           <div class="form-group">
             <label for="homeMessage">Message</label>
-            <textarea id="homeMessage" name="message" placeholder="Tell us about yourself and why you'd love a Shih Tzu..."></textarea>
+            <textarea id="homeMessage" name="message" placeholder="Tell us about yourself and why you'd love a Chihuahua..."></textarea>
           </div>
 
           <button type="submit" class="btn-submit">
@@ -81,7 +81,7 @@ const puppyNames = puppies.filter(p => p.status === 'Available').map(p => p.name
           </div>
           <div class="info-content">
             <h4>Email Us</h4>
-            <p><a href="mailto:info@crownpalaceshitzu.com">info@crownpalaceshitzu.com</a></p>
+            <p><a href="mailto:info@monarchchihuahuas.com">info@monarchchihuahuas.com</a></p>
           </div>
         </div>
 
@@ -107,7 +107,7 @@ const puppyNames = puppies.filter(p => p.status === 'Available').map(p => p.name
 
         <div class="info-note">
           <h4>Our Location</h4>
-          <p>We operate as a family-based home breeder. For the safety and privacy of our family and Shih Tzu puppies, we do not publicly list our address. Once you contact us, we'll gladly share our location and arrange a convenient visit or delivery.</p>
+          <p>We operate as a family-based home breeder. For the safety and privacy of our family and Chihuahua puppies, we do not publicly list our address. Once you contact us, we'll gladly share our location and arrange a convenient visit or delivery.</p>
         </div>
 
         <div class="info-puppies-card">
@@ -132,7 +132,7 @@ const puppyNames = puppies.filter(p => p.status === 'Available').map(p => p.name
 
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
-    data._email = { subject: "New Puppy Inquiry - Crown Palace Shih Tzu", from: "Crown Palace Shih Tzu Website" };
+    data._email = { subject: "New Puppy Inquiry - Monarch Chihuahuas", from: "Monarch Chihuahuas Website" };
     const submitBtn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
 
     const originalHTML = submitBtn.innerHTML;

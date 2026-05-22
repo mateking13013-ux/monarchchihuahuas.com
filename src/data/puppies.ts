@@ -17,44 +17,64 @@ const img = (file: string) => [`/images/${file}`, `/images/${file}`, `/images/${
 
 export const puppies: Puppy[] = [
   {
-    name: 'Charles', images: img('charles-1.jpg'), sex: 'Male', age: '10 weeks', status: 'Available', price: 750,
-    description: "A regal little gentleman with a flowing coat and a sweet, easygoing temperament. Charles loves a soft lap, gentle play, and being right where his people are. Raised in a family environment, fully vaccinated and dewormed, ready for his forever palace.",
-    coat: 'Silky long Shih Tzu coat', breed: 'Shih Tzu', puppyId: 'CP101', registration: 'AKC', healthStatus: 'DNA and Health checked'
+    name: 'Bella', images: img('bella.jpg'), sex: 'Female', age: '10 weeks', status: 'Available', price: 1200,
+    description: "A dainty little princess with the sweetest apple-domed head and the biggest expressive eyes. Bella is gentle, affectionate, and adores being carried close to her people. Raised in our home, fully vaccinated and dewormed, ready for her forever throne.",
+    coat: 'Smooth short Chihuahua coat', breed: 'Chihuahua', puppyId: 'MC101', registration: 'AKC', healthStatus: 'DNA and Health checked'
   },
   {
-    name: 'Cristel', images: img('cristel-1.jpg'), sex: 'Female', age: '10 weeks', status: 'Available', price: 750,
-    description: "A delicate, affectionate princess with bright eyes and a heart full of love. Cristel is gentle, social, and adores cuddle time after a little burst of play. From champion lines, current on shots and deworming, beautifully socialized.",
-    coat: 'Silky long Shih Tzu coat', breed: 'Shih Tzu', puppyId: 'CP102', registration: 'AKC', healthStatus: 'DNA and Health checked'
+    name: 'Bruno', images: img('bruno.jpg'), sex: 'Male', age: '10 weeks', status: 'Available', price: 1200,
+    description: "A bold little prince with a confident strut and a huge heart in a tiny body. Bruno is brave, playful, and turns into a complete lap warmer at rest. Family-raised, beautifully socialized, fully up to date on shots and deworming.",
+    coat: 'Smooth short Chihuahua coat', breed: 'Chihuahua', puppyId: 'MC102', registration: 'AKC', healthStatus: 'DNA and Health checked'
   },
   {
-    name: 'Finn', images: img('finn-1.png'), sex: 'Male', age: '10 weeks', status: 'Available', price: 750,
-    description: "A playful, curious little prince who greets every moment with a wagging tail. Finn loves soft toys, sibling chase games, and a gentle nap on the couch. Family-raised with thorough socialization, vaccinated and dewormed.",
-    coat: 'Silky long Shih Tzu coat', breed: 'Shih Tzu', puppyId: 'CP103', registration: 'AKC', healthStatus: 'DNA and Health checked'
+    name: 'Chico', images: img('chico.jpg'), sex: 'Male', age: '10 weeks', status: 'Available', price: 1200,
+    description: "A spunky pocket-sized charmer with a wagging tail and an even bigger personality. Chico loves play sessions, soft chew toys, and being right at his person's heels. From champion lines, vaccinated and dewormed.",
+    coat: 'Smooth short Chihuahua coat', breed: 'Chihuahua', puppyId: 'MC103', registration: 'AKC', healthStatus: 'DNA and Health checked'
   },
   {
-    name: 'Hazel', images: img('hazel-1.png'), sex: 'Male', age: '10 weeks', status: 'Available', price: 750,
-    description: "A warm, mellow soul with a teddy-bear face and a melt-in-your-arms personality. Hazel is the calm one of the litter — perfect for a family that wants a devoted, easygoing Shih Tzu companion.",
-    coat: 'Silky long Shih Tzu coat', breed: 'Shih Tzu', puppyId: 'CP104', registration: 'AKC', healthStatus: 'DNA and Health checked'
+    name: 'Chiquita', images: img('chiquita.jpg'), sex: 'Female', age: '10 weeks', status: 'Available', price: 1200,
+    description: "A delicate little duchess with sparkling eyes and a heart of pure devotion. Chiquita is gentle, social, and adores cuddle time after a quick zoom around the room. Raised with care, fully vaccinated and dewormed.",
+    coat: 'Smooth short Chihuahua coat', breed: 'Chihuahua', puppyId: 'MC104', registration: 'AKC', healthStatus: 'DNA and Health checked'
   },
   {
-    name: 'Maxwel', images: img('maxwel-1.png'), sex: 'Male', age: '10 weeks', status: 'Available', price: 750,
-    description: "A confident little charmer with a playful spirit and a deeply loving heart. Maxwel loves attention, adventure, and a soft cuddle when the day winds down. Raised with care, fully vaccinated and dewormed.",
-    coat: 'Silky long Shih Tzu coat', breed: 'Shih Tzu', puppyId: 'CP105', registration: 'AKC', healthStatus: 'DNA and Health checked'
+    name: 'Daisy', images: img('daisy.jpg'), sex: 'Female', age: '10 weeks', status: 'Available', price: 1200,
+    description: "A sunshine-bright little lady with the softest expression and a gentle, devoted nature. Daisy is happy on a lap, happy at your feet — she just wants to be near her people. Champion lines, vaccinated and dewormed.",
+    coat: 'Smooth short Chihuahua coat', breed: 'Chihuahua', puppyId: 'MC105', registration: 'AKC', healthStatus: 'DNA and Health checked'
   },
   {
-    name: 'Nella', images: img('nella-1.jpg'), sex: 'Female', age: '10 weeks', status: 'Available', price: 750,
-    description: "A sweet, dainty princess with the softest expression and a gentle, devoted nature. Nella is happy on a lap, happy at your feet — she just wants to be near her people. Champion lines, vaccinated and dewormed.",
-    coat: 'Silky long Shih Tzu coat', breed: 'Shih Tzu', puppyId: 'CP106', registration: 'AKC', healthStatus: 'DNA and Health checked'
+    name: 'Gizmo', images: img('gizmo.jpg'), sex: 'Male', age: '10 weeks', status: 'Available', price: 1200,
+    description: "A curious little gentleman with perky ears and a charm that wins every room. Gizmo loves attention, soft toys, and a snug blanket nest. Raised in a family environment, fully vaccinated and dewormed.",
+    coat: 'Smooth short Chihuahua coat', breed: 'Chihuahua', puppyId: 'MC106', registration: 'AKC', healthStatus: 'DNA and Health checked'
   },
   {
-    name: 'Tony', images: img('tony-1.png'), sex: 'Male', age: '10 weeks', status: 'Available', price: 750,
-    description: "A bold, joyful little prince bursting with character. Tony plays hard, loves harder, and turns straight into a snuggle bug at rest. Family-raised, beautifully socialized, fully up to date on shots and deworming.",
-    coat: 'Silky long Shih Tzu coat', breed: 'Shih Tzu', puppyId: 'CP107', registration: 'AKC', healthStatus: 'DNA and Health checked'
+    name: 'Lola', images: img('lola.jpg'), sex: 'Female', age: '8 weeks', status: 'Available', price: 1200,
+    description: "A tiny, treasured princess with the brightest eyes and a melt-in-your-arms personality. Lola is calm, affectionate, and just wants to be loved. Beautifully socialized, vaccinated and dewormed.",
+    coat: 'Smooth short Chihuahua coat', breed: 'Chihuahua', puppyId: 'MC107', registration: 'AKC', healthStatus: 'DNA and Health checked'
   },
   {
-    name: 'Ziggy', images: img('ziggy-1.png'), sex: 'Male', age: '10 weeks', status: 'Available', price: 750,
-    description: "A spirited, curious pup with a playful streak and an enormous heart. Ziggy is full of personality and ready to bond with the family that becomes his world. Vaccinated, dewormed, and beautifully family-raised.",
-    coat: 'Silky long Shih Tzu coat', breed: 'Shih Tzu', puppyId: 'CP108', registration: 'AKC', healthStatus: 'DNA and Health checked'
+    name: 'Luna', images: img('luna.jpg'), sex: 'Female', age: '8 weeks', status: 'Available', price: 1200,
+    description: "A moonlit little sweetheart with elegant features and a quiet, loving nature. Luna is the calm one of the litter — perfect for a family that wants a devoted, gentle Chihuahua companion.",
+    coat: 'Smooth short Chihuahua coat', breed: 'Chihuahua', puppyId: 'MC108', registration: 'AKC', healthStatus: 'DNA and Health checked'
+  },
+  {
+    name: 'Nacho', images: img('nacho.jpg'), sex: 'Male', age: '10 weeks', status: 'Available', price: 1200,
+    description: "A spicy little personality in the tiniest royal package. Nacho is playful, curious, and never far from his people. Fully vaccinated, dewormed, and beautifully family-raised.",
+    coat: 'Smooth short Chihuahua coat', breed: 'Chihuahua', puppyId: 'MC109', registration: 'AKC', healthStatus: 'DNA and Health checked'
+  },
+  {
+    name: 'Rosie', images: img('rosie.jpg'), sex: 'Female', age: '10 weeks', status: 'Available', price: 1200,
+    description: "A blossom of a girl with the softest coat and a heart full of love. Rosie is gentle, social, and a perfect little shadow for the lucky family she joins. Champion lines, vaccinated and dewormed.",
+    coat: 'Smooth short Chihuahua coat', breed: 'Chihuahua', puppyId: 'MC110', registration: 'AKC', healthStatus: 'DNA and Health checked'
+  },
+  {
+    name: 'Taco', images: img('taco.jpg'), sex: 'Male', age: '10 weeks', status: 'Available', price: 1200,
+    description: "A bold, joyful little prince bursting with character. Taco plays hard, loves harder, and turns straight into a snuggle bug at rest. Family-raised, beautifully socialized, fully up to date on shots and deworming.",
+    coat: 'Smooth short Chihuahua coat', breed: 'Chihuahua', puppyId: 'MC111', registration: 'AKC', healthStatus: 'DNA and Health checked'
+  },
+  {
+    name: 'Tinkerbell', images: img('tinkerbell.jpg'), sex: 'Female', age: '8 weeks', status: 'Available', price: 1200,
+    description: "A tiny fairy of a girl with a sparkling personality and the most adorable little face. Tinkerbell is gentle, playful, and absolutely treasured. Raised with care, fully vaccinated and dewormed.",
+    coat: 'Smooth short Chihuahua coat', breed: 'Chihuahua', puppyId: 'MC112', registration: 'AKC', healthStatus: 'DNA and Health checked'
   }
 ];
 
